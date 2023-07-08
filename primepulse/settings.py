@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'category',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -77,6 +79,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'primepulse.wsgi.application'
 
+AUTH_USER_MODEL = 'accounts.Account'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
