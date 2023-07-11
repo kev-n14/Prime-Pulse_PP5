@@ -37,38 +37,7 @@
                             </div> <!-- card-body.// -->
                         </div>
                     </article> <!-- filter-group  .// -->
-                    <article class="filter-group">
-                        <header class="card-header">
-                            <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
-                                <i class="icon-control fa fa-chevron-down"></i>
-                                <h6 class="title">Sizes </h6>
-                            </a>
-                        </header>
-                        <div class="filter-content collapse show" id="collapse_4" style="">
-                            <div class="card-body">
-                                <label class="checkbox-btn">
-                                    <input type="checkbox">
-                                    <span class="btn btn-light"> XS </span>
-                                </label>
-
-                                <label class="checkbox-btn">
-                                    <input type="checkbox">
-                                    <span class="btn btn-light"> SM </span>
-                                </label>
-
-                                <label class="checkbox-btn">
-                                    <input type="checkbox">
-                                    <span class="btn btn-light"> LG </span>
-                                </label>
-
-                                <label class="checkbox-btn">
-                                    <input type="checkbox">
-                                    <span class="btn btn-light"> XXL </span>
-                                </label>
-                            </div><!-- card-body.// -->
-                        </div>
-                    </article> <!-- filter-group .// -->
-
+                    <!-- 1-->
                     <article class="filter-group">
                         <header class="card-header">
                             <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" class="">
@@ -129,12 +98,12 @@
                         <figure class="card card-product-grid">
                             <div class="img-wrap">
 
-                                <img src="{{product.images.url}}">
+                                <a href="{{ product.get_url}}"><img src="{{product.images.url}}"></a>
 
                             </div> <!-- img-wrap.// -->
                             <figcaption class="info-wrap">
                                 <div class="fix-height">
-                                    <a href="./product-detail.html" class="title">{{product.product_name}}</a>
+                                    <a href="{{ product.get_url}}" class="title">{{product.product_name}}</a>
                                     <div class="price-wrap mt-2">
                                         <span class="price">€{{product.price}}</span>
 
