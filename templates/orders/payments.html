@@ -1,0 +1,82 @@
+{% extends 'base.html'%}
+{% load static %}
+
+
+{% block content%}
+
+<section class="section-content padding-y bg">
+    <div class="container">
+
+        <!-- ============================ COMPONENT 1 ================================= -->
+
+        <div class="row">
+            <aside class="col-lg-8">
+                <div class="card">
+                    <h5 class="card-header">Billing Address</h5>
+                    <div class="card-body">
+                        <p class="card-text mb-0">{{order.full_name}}</p>
+                        <p class="card-text mb-0">{{order.full_address}}</p>
+                        <p class="card-text mb-0">{{order.city}}, {{order.state}}</p>
+                        <p class="card-text mb-0">{{order.country}}</p>
+                        <p class="card-text mb-0">{{order.email}}</p>
+                        <p class="card-text mb-0">{{order.phone}}</p>
+                        {% if order.order_note %}
+                        <b>Order Note: </b> {{order.order_note}}
+                        {% endif %}
+
+
+                    </div>
+
+                </div> <!-- card.// -->
+                <div class="card">
+                    <h5 class="card-header">Payment Method</h5>
+                    <div class="card-body">
+
+                    </div>
+
+                </div> <!-- card.// -->
+                <div class="card">
+                    <h5 class="card-header">Review Products</h5>
+                    <div class="card-body">
+
+                    </div>
+
+                </div> <!-- card.// -->
+
+
+            </aside> <!-- col.// -->
+            <aside class="col-lg-4">
+
+                <div class="card">
+                    <div class="card-body">
+                        <dl class="dlist-align">
+                            <dt>Total price:</dt>
+                            <dd class="text-right">€ {{total}}</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Tax:</dt>
+                            <dd class="text-right"> € {{tax}}</dd>
+                        </dl>
+                        <dl class="dlist-align">
+                            <dt>Total:</dt>
+                            <dd class="text-right text-dark b"><strong>€ {{grand_total}}</strong></dd>
+                        </dl>
+                        <hr>
+                        <p class="text-center mb-3">
+                            <img src="{% static './images/misc/payments.png'%}" height="26">
+                        </p>
+                        <a href="{% url 'checkout' %}" class="btn btn-primary btn-block"> Make Payment </a>
+
+                    </div> <!-- card-body.// -->
+                </div> <!-- card.// -->
+
+            </aside> <!-- col.// -->
+
+
+        </div> <!-- row.// -->
+
+        <!-- ============================ COMPONENT 1 END .// ================================= -->
+
+    </div> <!-- container .//  -->
+</section>
+{% endblock %}
