@@ -66,6 +66,7 @@ def login(request):
             try:
                 cart = Cart.objects.get(cart_id=_cart_id(request))
                 is_cart_item_exists = CartItem.objects.filter(cart=cart).exists()
+
                 if is_cart_item_exists:
                     cart_item = CartItem.objects.filter(cart=cart)
 
@@ -73,8 +74,8 @@ def login(request):
                         item.user = user
                         item.save()
             except:
-                pass
-
+                pass            
+            
             auth.login(request, user)
             messages.success(request, 'You are now logged in.')
             return redirect('dashboard')
