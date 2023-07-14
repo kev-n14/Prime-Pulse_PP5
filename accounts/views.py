@@ -13,7 +13,7 @@ from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
 from carts.models import CartItem, Cart
 from carts.views import _cart_id
-
+#from allauth.account.forms import LoginForm, SignupForm
 
 
 def register(request):
@@ -50,7 +50,7 @@ def register(request):
     else:
         form = RegistrationForm()
         context = {
-        'form': form,
+            'form': form,
         }
     return render(request, 'accounts/register.html', context)
 
@@ -77,7 +77,7 @@ def login(request):
 
             auth.login(request, user)
             messages.success(request, 'You are now logged in.')
-            return redirect('')
+            return redirect('dashboard')
         else:
             messages.error(request, 'Invalid login credentials')
             return redirect('login')
@@ -98,3 +98,7 @@ def activate(request):
 @login_required(login_url='login')
 def dashboard(request):
     return render(request, 'accounts/dashboard.html')
+
+
+def forgotPassword(request):
+    return render(request, 'accounts/forgotPassword.html')

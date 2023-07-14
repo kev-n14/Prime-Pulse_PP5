@@ -1,108 +1,269 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# PP4-Expense-Tracker
 
-Welcome kev-n14,
+![logo](https://res.cloudinary.com/dlulkctls/image/upload/v1681688028/readme/expense-tracker-low-resolution-logo-black-on-transparent-background_s1l6zs.png)
+# Express Tracker Application
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This site is 
 
-## Gitpod Reminders
+## Features
+---
+### **Landing Page**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Landing Page]()
 
-`python3 -m http.server`
+### **Navigation Bar**
 
-A blue button should appear to click: _Make Public_,
+![Navigation Bar]()
 
-Another blue button should appear to click: _Open Browser_.
+### **Sign Up Page** 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Sign Up Page]()
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### **Login Page**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+![Login Page]()
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### **Signout Page** 
 
-------
 
-## Release History
+![Signout Page]()
+### **The Add Expenses section**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![The Add Expenses section]()
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### **Expense Form Section**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Expense Form Section]()
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### **Expense Summary and Charts**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Expense Summmary and Charts]()
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### **Edit Page**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Edit Page]()
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### **Features Left to Implement**
+In the future, we hope to add:
+* Separate user expense forms specific to each user.
+* 
 
-------
 
-## FAQ about the uptime script
+## User Experience (UX)
+---
+* ### **User stories**
 
-**Why have you added this script?**
+    * **First-Time Visitor Goals**
+        1. As a First Time Visitor, 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+        2. As a First Time Visitor, 
 
-**How will this affect me?**
+        3. As a First Time Visitor, 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    * **Returning Visitor Goals**
+        1. As a Returning Visitor,
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+        2. As a Returning Visitor, 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+        3. As a Returning Visitor, 
+    * **Frequent User Goals**
+        1. As a Frequent User, 
+        2. As a Frequent User, 
+        3. As a Frequent User, 
 
-**So….?**
+* ### **Design**
+    * **Colour Scheme**
+        * 
+    * **Typography**
+        * 'Segoe UI'
+    * **Imagery**
+         * 
+ 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* ### **Wireframes**
+    * Edit Page - [View]()
+    * Login - [View]()
+    * Sign Up - [View]()
+    * Landing Page - [View]()
 
-**Can I opt out?**
+## Agile Methodology
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Each User Story has defined outcome criteria to make it clear when the User Story has been completed. To view User stories click [here](https://github.com/users/kev-n14/projects/8). User stories were moved from Todo -> In Progress -> Done as each user story was completed.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Security Features and Defensive Design
+### User Authentication
+- 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Form Validation
 
+### Database Security
+
+
+## Technologies Used
+---
+### Languages Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+ ### Frameworks - Libraries - Programs Used
+1. [Python](https://www.python.org/):
+    * Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule. Python is dynamically typed and garbage-collected
+1. [ElephantSQL](https://www.elephantsql.com/):
+    * ElephantSQL provides a browser tool for SQL queries where you can create, read, update, and delete data directly from your web browser.
+1. [Django](https://www.djangoproject.com/):
+    * Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. 
+1. [Django-allauth](https://django-allauth.readthedocs.io/en/latest/):
+    * integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.
+1. [Tailwindcss](https://tailwindcss.com/):
+    * Tailwind CSS is an open-source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.
+1. [Chart. js](https://www.chartjs.org/):
+    * Chart.js is a free, open-source JavaScript library for data visualization, which supports eight chart types: bar, line, area, pie, bubble, radar, polar, and scatter.
+1. [Node. js](https://nodejs.org/en):
+    * Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, that runs on the V8 JavaScript Engine and executes JavaScript code outside a web browser
+1. [favicon](https://www.flaticon.com/):
+    * Used to create icons for web browser tab.
+1. [Google Fonts](https://fonts.google.com/):
+    * Google fonts were used to choose the fonts for this site. the fonts were declared in the style.css file which is used on all pages throughout the site.
+
+1. [Font Awesome](https://fontawesome.com/):
+    * Font Awesome was used on all pages throughout the website to add icons for social media links.
+
+1. [Gitpod](https://www.gitpod.io/):
+    * Gitpod terminal to commit to Git and Push to GitHub.
+
+1. [GitHub](https://github.com/):
+    * GitHub was used to store the site's code after being pushed from Gitpod.
+
+1. [Balsamiq](https://balsamiq.com/):
+    * Balsamiq was used to create the wireframes during the design process.
+1. [Grammerly](https://app.grammarly.com/):
+    * Used to proofread the README.md
+
+## Testing
 ---
 
-Happy coding!
+## Validator Testing
+
+The W3C Markup Validator, W3C jigsaw CSS Validator, and PEP8 Code Institute validator Services were used to validate the project to ensure there were no major errors in the project.
+* **HTML**
+1. Home Page - Document checking completed. No errors or warnings to show.[W3C validator]()
+1. Landing Page - Document checking completed. No errors or warnings to show.[W3C validator]()
+1. Edit Page - Document checking completed. No errors or warnings to show.[W3C validator]()
+1. Login Page - Document checking completed. No errors or warnings to show.[W3C validator]()
+1. Sign Up - Document checking completed. No errors or warnings to show.[W3C validator]()
+1. Sign Out- Document checking completed. No errors or warnings to show.[W3C validator]()
+![HTML Validator ]()
+* **CSS**
+No errors were found when passing through the official [(Jigsaw) validator]()
+![CSS Validator ]()
+* **Python**
+* [PEP8 Code Institute validator:] (https://pep8ci.herokuapp.com/#)
+    * A few minor errors:
+        * 
+
+### Testing User Stories from the User Experience (UX) Section
+#### **First Time Visitor Goals**
+1. As a First Time Visitor, 
+
+1. As a First Time Visitor, 
+1. As a First Time Visitor,  
+    
+#### **Returning Visitor Goals**
+1. As a Returning Visitor, 
+
+1. As a Returning Visitor, 
+
+
+1. As a Returning Visitor, 
+
+#### **Frequent User Goals**
+1. As a Frequent User, 
+
+2. As a Frequent User, 
+
+3. As a Frequent User, 
+ 
+## Performance
+---
+### **Lighthouse Test**
+* Landing Page
+![Landing Page]()
+
+* Edit Page
+![Gallery Page]()
+
+* Sign Up Page 
+![Sign Up Page ]()
+
+* Sign Out Page 
+![Sign Out Page  ]()
+
+* Sign In Page 
+![Sign In Page  ]()
+
+
+## Deployment
+---
+### **Heroku**
+This site was deployed to Heroku. The steps to deploy are as follows:
+1. Ensure in Django settings, DEBUG is False
+1. Go to the deploy tab on Heroku and connect to GitHub, then to the required repository. 
+1. Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+1. Click View to view the deployed site.
+
+
+### **Forking the GitHub Repository**
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+- Log in to GitHub and Locate the repository at this link [Expense Tracker]().
+- At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
+- A copy of the repository is now created.
+
+
+### **Making a Local Clone**
+1. Log in to GitHub and locate the GitHub repository at this link [Expense Tracker]().
+1. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the preferred cloning option, and then copy the link provided. 
+1. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+1. Open Git Bash
+1. Change the current working directory to the location where you want the cloned directory to be made.
+1. Type git clone, and then paste the URL you copied in Step 3.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+Press Enter. Your local clone will be created.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> Remote: Counting objects: 10, done.
+> Remote: Compressing objects: 100% (8/8), done.
+> remote: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+1. Type **'Enter'** to create the local clone.
+
+
+## Credits
+---
+* [Font Awesome](https://fontawesome.com/) 
+* [W3schools](https://www.w3schools.com/)
+* [Favicon](https://www.flaticon.com/free-icons/catholic/2) 
+* [Unsplash](https://unsplash.com/) 
+* [Tailwindcss](https://tailwindcss.com/docs/installation)
+* [W3C validator](https://validator.w3.org/)
+* [(Jigsaw) validator](https://validator.w3.org/nu/#textarea)
+* [Stackoverflow](https://stackoverflow.com/)
+* [slack](https://slack.com/intl/en-ie/)
