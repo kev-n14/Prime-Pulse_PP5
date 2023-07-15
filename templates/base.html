@@ -29,6 +29,11 @@
     <link href="{% static 'css/responsive.css'%}" rel="stylesheet" media="only screen and (max-width: 1200px)" />
     {% endblock%}
     <script src="{% static 'js/script.js'%}" type="text/javascript"></script>
+    <!-- paypal script-->
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AdetGUHGHJkiS64qvrTpIFNFE5AY7ibzY0lDQDcOERFDTSLlrPUeumpexe-TUGrkGXX2Bzc1gkEUp-V8&currency=USD">
+    </script>
+    <!-- Stripe <script src="https://js.stripe.com/v3/"></script>-->
     <script src="https://kit.fontawesome.com/43ecf20a8b.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         /// some script
@@ -50,5 +55,4 @@
     <!--content-->
     {% endblock %}
     <!--footer-->
-
     {% include 'includes/footer.html' %}
