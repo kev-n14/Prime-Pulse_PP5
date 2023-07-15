@@ -143,10 +143,10 @@
 }
     
     var amount = "{{grand_total}}"
-    var url = "{% url 'payments'%}"
-    var payment_method ='PayPal'
+    var url = "{% url 'payments' %}"
     var csrftoken = getCookie('csrftoken');
     var orderID = "{{order.order_number}}"
+    var payment_method ='PayPal'
     
         // Render the PayPal button into #paypal-button-container
     paypal.Buttons({
@@ -177,20 +177,20 @@
                 sendData();
                 alert('Transaction completed by ' + details.payer.name.given_name + '!');
 
-                function sendData() {
-                    fetch(url, {
-                        method : "POST",
-                        headers: {
-                            "Content-type": "application/json",
-                            "X_CSRFToken": csrftoken
-                        },
-                        body: JSON.stringify({
-                            orderID: orderID,
-                            transID: details.id,
-                            payment_method:payment_method,
-                            status: details.status,
-                        }),
-                    })
+                function sendData(){
+					fetch(url, {
+						method : "POST",
+						headers: {
+							"Content-type": "application/json",
+							"X-CSRFToken": csrftoken,
+						},
+						body: JSON.stringify({
+							orderID: orderID,
+							transID: details.id,
+							payment_method: payment_method,
+							status: details.status,
+						}),
+					})
                         //.then(response => response.json())
                         //.then(data => console.log(data));
                 }
