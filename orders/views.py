@@ -5,9 +5,14 @@ from .forms import OrderForm
 import datetime
 from .models import Order, Payment, OrderProduct
 import json
+from store.models import Product
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
+
 
 def payments(request):
     body = json.loads(request.body)
+    
     order = Order.objects.get(user=request.user, is_ordered=False, order_number=body['orderID'])
 
     # Store transaction details inside Payment model
@@ -23,6 +28,43 @@ def payments(request):
     order.payment = payment
     order.is_ordered = True
     order.save()
+
+
+    cart_items = CartItem.objects.filter(user=request.user)
+
+    for item in cart_items:
+        orderproduct = OrderProduct()
+        orderproduct.order_id = order.id
+        orderproduct.payment = payment
+        orderproduct.user_id = request.user.id
+        orderproduct.product_id = item.product_id
+        orderproduct.quantity = item.quantity
+        orderproduct.product_price = item.product.price
+        orderproduct.ordered = True
+        orderproduct.save()
+
+        cart_item = CartItem.objects.get(id=item.id)
+        orderproduct = OrderProduct.objects.get(id=orderproduct.id)
+        orderproduct.save()
+
+
+        # Reduce the quantity of the sold products
+        product = Product.objects.get(id=item.product_id)
+        product.stock -= item.quantity
+        product.save()
+    # Clear cart
+    CartItem.objects.filter(user=request.user).delete()
+
+    # send email
+    mail_subject = 'Thank you for shopping with us.'
+    message = render_to_string('orders/order_recieved_email.html', {
+        'user': request.user,
+        'order': order,
+    })
+    to_email = request.user.email
+    send_email = EmailMessage(mail_subject, message, to=[to_email])
+    send_email.send()
+
     return render(request, 'orders/payments.html')
 
 
@@ -78,10 +120,12 @@ def place_order(request, total=0, quantity=0,):
                 'total': total,
                 'tax': tax,
                 'grand_total': grand_total,
-                'stripe_public_key' : 'pk_test_51NU4kfJZWSYYly8Gm4YPjj5cv14XahQJIT0dlAJO8nti0IwzWKGgx6SBcTQDPR0A7KpDwAG8SgEyka6Z4MZFKiUS00ERZnej1m',
+                'stripe_public_key': 'pk_test_51NU4kfJZWSYYly8Gm4YPjj5cv14XahQJIT0dlAJO8nti0IwzWKGgx6SBcTQDPR0A7KpDwAG8SgEyka6Z4MZFKiUS00ERZnej1m',
             }
             return render(request, 'orders/payments.html', context)
     else:
         return redirect('checkout')
 
+def order_complete(request):
+    return render (request, 'orders/order_complete.html')
 
