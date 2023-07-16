@@ -1,8 +1,8 @@
 from django.db import models
 from category.models import Category
 from django.urls import reverse
-from django.db.models import Avg
-from accounts.models import Account, count
+from django.db.models import Avg, Count
+from accounts.models import Account
 
 
 class Product(models.Model):

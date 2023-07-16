@@ -441,7 +441,10 @@ p:last-child {
     background-color: #8c1495;
 }
 
-
+.navbar {
+    background-color: #4267B2;
+    color: #fff;
+}
 
 .brand-wrap .logo,
 .navbar-brand .logo {
