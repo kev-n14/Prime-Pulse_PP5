@@ -1,12 +1,7 @@
 {% extends 'base.html'%}
-
 {% block content %}
-
 <section class="section-conten padding-y" style="min-height:84vh">
-
-    <!-- ============================ COMPONENT LOGIN   ================================= -->
     {% if request.GET.command == 'verification' %}
-
     <div class="container mx-auto alert alert-info text-center">
         Thank you for signing up with us. We have sent you a verification email to your email address
         [{{ request.GET.email }}]
@@ -22,28 +17,21 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="Email Address" name="email">
-                </div> <!-- form-group// -->
+                </div>
                 <div class="form-group">
                     <input type="password" class="form-control" placeholder="Password" name="password">
-                </div> <!-- form-group// -->
-
+                </div>
                 <div class="form-group">
                     <a href="{% url 'forgotPassword'%}" class="float-right">Forgot password?</a>
-
-                </div> <!-- form-group form-check .// -->
+                </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Login </button>
-                </div> <!-- form-group// -->
+                </div>
             </form>
-        </div> <!-- card-body.// -->
-    </div> <!-- card .// -->
-
+        </div>
+    </div>
     <p class="text-center mt-4">Don't have account? <a href="{% url 'register' %}">Sign up</a></p>
     <br><br>
-    <!-- ============================ COMPONENT LOGIN  END.// ================================= -->
-
-
 </section>
 {% endif %}
-<!-- ========================= SECTION CONTENT END// ========================= -->
 {% endblock%}

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /account/
+Disallow: /login/
+Disallow: /register/
+Disallow: /admin/
+Disallow: /search/
+Disallow: /wishlist/
+
+Sitemap: https://prime-pulse-d780887a098c.herokuapp.com/sitemaps.xml

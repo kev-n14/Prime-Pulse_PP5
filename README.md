@@ -10,96 +10,94 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 ---
 ### **Landing Page**
 
-![Landing Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/home_page_jqlbf4.png)
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/home_page_jqlbf4.png" alt="Landing Page" width="900"/>
 
 ### **Navigation Bar**
-
-![Navigation Bar](https://res.cloudinary.com/dlulkctls/image/upload/v1689573129/readme-primepulse/home_1_fkkxko.png)
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/home_1_fkkxko.png" alt="Navigation Bar" width="900"/>
 
 
 ### **Footer Section** 
-
-
 ![Footer Section](https://res.cloudinary.com/dlulkctls/image/upload/v1689573918/readme-primepulse/footer_e63eaz.png)
 
 
 ### **Sign Up Page** 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/sign_up_sem3eo.png" alt="Sign Up" width="900"/>
 
-
-![Sign Up Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689573916/readme-primepulse/sign_up_sem3eo.png)
 
 
 ### **Login Page**
 
-
-![Login Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572929/readme-primepulse/sign_in_kc0oxs.png)
-
-
-### **Signout Page** 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/sign_in_kc0oxs.png" alt="Login Page" width="900"/>
 
 
-![Signout Page]()
 ### **Store Page**
 
-
-![Store Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572933/readme-primepulse/store_page_sdwpmj.png)
-
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/store_page_sdwpmj.png" alt="Store Page" width="900"/>
 
 
 ### **Product Page**
 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/product_details_page_zbvly9.png" alt="Product Page" width="900"/>
 
-![Product Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572940/readme-primepulse/product_details_page_zbvly9.png)
 
 
 ### **Cart Page**
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/cart_iyhqbz.png" alt="Cart Page" width="900"/>
 
-![Cart Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/cart_iyhqbz.png)
 
 
 ### **Billing Page**
-
-![Billing Address](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/billing_address_page_hkswlp.png)
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/billing_address_page_hkswlp.png" alt="Billing Address Page" width="900"/>
 
 ### **Review Page** 
 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/review_page_wjdtoj.png" alt="Review Page" width="900"/>
 
-![Review Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572932/readme-primepulse/review_page_wjdtoj.png)
+
 ### **Paypal Transaction Page** 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/paypal_transaction_vum32d.png" alt="LandiPaypal Transactionng Page" width="900"/>
 
-![Paypal Transaction Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689573949/readme-primepulse/paypal_transaction_vum32d.png)
+
+
 ### **Signout Page** 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/payment_success_m8nag9.png" alt="Payment successful Page" width="900"/>
 
-![Payment successful Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572931/readme-primepulse/payment_success_m8nag9.png)
 ### **User Dashboard Page** 
 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_main_bkealj.png" alt="User Dashboard Page" width="900"/>
 
-![User Dashboard Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/dashboard_main_bkealj.png)
 ### **Orders Page** 
 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_my_orders_zpgpjy.png" alt="Orders Page" width="900"/>
 
-![Orders Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/dashboard_my_orders_zpgpjy.png)
 ### **Edit Profile Page** 
 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_edit_profile_zeeeo1.png" alt="Edit Profile Page" width="900"/>
 
-![Edit Profile Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572929/readme-primepulse/dashboard_edit_profile_zeeeo1.png)
 ### **Change Password  Page** 
 
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_change_password_fufnxy.png" alt="Change Password Page" width="900"/>
 
-![Change Password Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/dashboard_change_password_fufnxy.png)
 ### **Facebook Page** 
 
-
-![Facebook Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572934/readme-primepulse/facebook_1_b7esip.png)
-
-### **Facebook Second Page** 
-
-
-![Facebook Second Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572934/readme-primepulse/facebook_1_b7esip.png)
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/facebook_1_b7esip.png" alt="Facebook Page" width="900"/>
 
 
 
 
+
+
+## Features
+---
+- **Extensive Product Catalog:** Browse through a diverse selection of fitness equipment, including treadmills, dumbbells, exercise bikes, yoga mats, and more.
+- **User Accounts:** Create an account and log in to access personalized features such as saving your wishlist, tracking orders, and managing your profile information.
+- **Search Functionality:** Easily find specific products using the search feature, saving you time and effort.
+- **Shopping Cart and Checkout:** Add desired products to your cart, review your items, and proceed to a secure checkout process for a seamless purchasing experience.
+- **Secure Payments:** Enjoy peace of mind with secure online payment options, ensuring the safety and privacy of your financial information.
+- **Order Tracking:** Receive email notifications and order confirmation with details about your purchase and delivery status.
+- **Customer Support:** Reach out to our friendly customer support team through the contact form for assistance or inquiries about products, orders, or any other concerns.
+- **Detailed Product Information:** Access comprehensive product descriptions, images, specifications, and customer reviews to make informed decisions.
+- **Responsive Design:** Experience a user-friendly interface that adapts to different devices, providing a seamless shopping experience on desktop, tablet, and mobile.
 
 
 
@@ -114,22 +112,21 @@ In the future, we hope to add:
 * ### **User stories**
 
     * **First-Time Visitor Goals**
-        1. As a First Time Visitor, 
+        1. As a user, I want to be able to browse through a wide range of fitness equipment products, so I can find the items that meet my fitness goals and preferences.
 
-        2. As a First Time Visitor, 
+        2. As a user, I want to be able to create an account and log in, so I can access personalized features such as saving my wishlist, tracking my orders, and managing my profile information.
 
-        3. As a First Time Visitor, 
+        3. As a user, I want to be able to search for specific fitness equipment products, so I can quickly find what I'm looking for without having to navigate through the entire site.
 
     * **Returning Visitor Goals**
-        1. As a Returning Visitor,
+        1. As a returning visitor, I want to be able to view my order history, so I can track my past purchases and review the details of each order.
+        2. As a Returning Visitor, As a returning visitor, I want to easily access my previously created account, allowing me to log in quickly and access my saved information and preferences.
 
-        2. As a Returning Visitor, 
-
-        3. As a Returning Visitor, 
+        3. As a Returning Visitor, As a returning visitor, I want to receive personalized recommendations based on my previous purchases and browsing history, helping me discover new fitness equipment that aligns with my interests.
     * **Frequent User Goals**
-        1. As a Frequent User, 
-        2. As a Frequent User, 
-        3. As a Frequent User, 
+        1. As a frequent visitor, I want to be able to see new product arrivals or updates on the homepage, so I can stay informed about the latest fitness equipment offerings.
+        2. As a frequent visitor, I want to be able to quickly access my previously viewed products or categories, making it convenient to revisit items of interest.
+        3. As a frequent visitor, I want to have the option to subscribe to a newsletter or email updates, allowing me to receive notifications about exclusive discounts, promotions, or upcoming product releases.
 
 * ### **Design**
     * **Colour Scheme**
@@ -138,30 +135,29 @@ In the future, we hope to add:
         * 'Segoe UI'
     * **Imagery**
          * abstract large banner image with company logo in white.
- 
-
-* ### **Wireframes**
-    * Edit Page - [View]()
-    * Login - [View]()
-    * Sign Up - [View]()
-    * Landing Page - [View]()
-
 
 
 
 ## Security Features and Defensive Design
 ### User Authentication
-- Users must provide full name email address.
+- Users must provide full name email address when creating an account
 - User is verified by email address.
-- django default admin page is has a path way of admin/. we changed this to a different path. By use honey a dumby admin site is created.
-- all sensitive imformation is stored in a env.py file.
+- django default admin page has a path way of admin/. we changed this to a different path. By use honeypot a dumby admin site is created.
+- all sensitive information is stored in a env.py file.
 
 ### Form Validation
 - CSRF tokens prevent CSRF because without a token, an attacker cannot create valid requests to the backend server. For the Synchronised Token Pattern, CSRF tokens should not be transmitted using cookies. The CSRF token can be transmitted to the client as part of a response payload, such as a HTML or JSON response.
 
 ### Database Security
 
+- Secure Connection (SSL/TLS):
 
+- Configure your application to connect to ElephantSQL using a secure SSL/TLS connection. This helps encrypt data transmitted between your application and the database server, protecting it from interception.
+Strong Authentication:
+
+- Use strong and unique credentials (username and password) for accessing your ElephantSQL database.
+Avoid using default or easily guessable credentials.
+Regularly rotate your database credentials to maintain security.
 ## Technologies Used
 ---
 ### Languages Used
@@ -195,7 +191,8 @@ In the future, we hope to add:
     * Balsamiq was used to create the wireframes during the design process.
 1. [Grammerly](https://app.grammarly.com/):
     * Used to proofread the README.md
-
+1. [PayPal](https://www.paypal.com/):
+    * For Transactions
 ## Testing
 ---
 
@@ -218,44 +215,6 @@ No errors were found when passing through the official [(Jigsaw) validator]()
     * A few minor errors:
         * 
 
-### Testing User Stories from the User Experience (UX) Section
-#### **First Time Visitor Goals**
-1. As a First Time Visitor, 
-1. As a First Time Visitor, 
-1. As a First Time Visitor,  
-    
-#### **Returning Visitor Goals**
-1. As a Returning Visitor, 
-
-1. As a Returning Visitor, 
-
-
-1. As a Returning Visitor, 
-
-#### **Frequent User Goals**
-1. As a Frequent User, 
-
-2. As a Frequent User, 
-
-3. As a Frequent User, 
- 
-## Performance
----
-### **Lighthouse Test**
-* Landing Page
-![Landing Page]()
-
-* Edit Page
-![Gallery Page]()
-
-* Sign Up Page 
-![Sign Up Page ]()
-
-* Sign Out Page 
-![Sign Out Page  ]()
-
-* Sign In Page 
-![Sign In Page  ]()
 
 
 ## Deployment

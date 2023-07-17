@@ -1,15 +1,8 @@
 {% extends 'base.html'%}
 {% load static %}
-
-
 {% block content%}
-
 <section class="section-content padding-y bg">
     <div class="container">
-
-        <!-- ============================ COMPONENT 1 ================================= -->
-
-
         <div class="row">
             <aside class="col-lg-6">
                 <div class="card">
@@ -68,12 +61,9 @@
                                 <textarea name="order_note" rows="2" class="form-control"></textarea>
                             </div>
                     </div>
-                </div> <!-- card.// -->
-
-            </aside> <!-- col.// -->
-
+                </div>
+            </aside>
             <aside class="col-lg-6">
-
                 <div class="card">
                     <div class="card-body">
                         <table class="table table-borderless table-shopping-cart">
@@ -82,7 +72,6 @@
                                     <th scope="col">Product</th>
                                     <th scope="col" width="120">Quantity</th>
                                     <th scope="col" width="120">Price</th>
-
                                 </tr>
                             </thead>
                             <tbody>
@@ -96,7 +85,6 @@
                                             <figcaption class="info">
                                                 <a href="{{ cart_item.product.get_url }}"
                                                     class="title text-dark">{{ cart_item.product.product_name }}</a>
-                                                <!--<p class="text-muted small">Colour: 25 Mpx <br> Size: Canon</p>-->
                                             </figcaption>
                                         </figure>
                                     </td>
@@ -106,10 +94,10 @@
                                     <td>
                                         <div class="price-wrap">
                                             <var class="price">€{{ cart_item.sub_total|floatformat:2}}</var>
-                                            <small class="text-muted"> €{{ cart_item.product.price|floatformat:2 }} each </small>
-                                        </div> <!-- price-wrap .// -->
+                                            <small class="text-muted"> €{{ cart_item.product.price|floatformat:2 }} each
+                                            </small>
+                                        </div>
                                     </td>
-
                                 </tr>
                                 {% endfor %}
                             </tbody>
@@ -117,16 +105,10 @@
                         <button class="btn btn-primary btn-block" type="submit" name="submit">Place Order</button>
                         <a href="{% url 'store' %}" class="btn btn-light btn-block">Continue Shopping</a>
                         </form>
-                    </div> <!-- card-body.// -->
-                </div> <!-- card.// -->
-
-            </aside> <!-- col.// -->
-
-
-        </div> <!-- row.// -->
-
-        <!-- ============================ COMPONENT 1 END .// ================================= -->
-
-    </div> <!-- container .//  -->
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
 </section>
 {% endblock %}

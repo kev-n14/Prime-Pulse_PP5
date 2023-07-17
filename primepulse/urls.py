@@ -18,6 +18,16 @@ from django.urls import path, include
 from . import views
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.generic import TemplateView
+from django.conf.urls import handler404
+from primepulse import views
+from django.contrib.sitemaps.views import sitemap
+from .views import sitemaps
+from primepulse.views import MySitemap
+
+
+
+handler404 = 'primepulse.views.page_not_found'
 
 urlpatterns = [
     path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
@@ -26,7 +36,12 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('store/', include('store.urls')),
     path('cart/', include('carts.urls')),
-
     path('orders/', include('orders.urls')),
 
+    path('<str:slug>/', views.page_not_found, name='404'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+   
+   
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

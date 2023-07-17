@@ -1,16 +1,12 @@
 @charset "UTF-8";
+
 /* ==== BASE STYLES ====*/
 /* ==================== GLOBAL STYLES ======================= */
-
 html {
     font-family: "Inter", sans-serif;
     font-size: 15px;
 }
 
-/* ========================
-INCLUDE STYLES AND COMPONENTS
-===================== */
-/* ================== HELPERS  =================== */
 a:hover {
     text-decoration: none;
 }
@@ -683,33 +679,6 @@ ul li a:hover:nth-child(4) {
     color: #dd4b39;
 }
 
-/* ================== COMPONENTS =================== */
-/* ================ OWL SLIDER BANNER ================ */
-.slider-banner-owl .owl-nav .owl-prev,
-.slider-banner-owl .owl-nav .owl-next {
-    padding: 16px 7px;
-    color: #FFF;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    z-index: 9;
-    position: absolute;
-}
-
-.slider-banner-owl .owl-nav .owl-prev {
-    left: 0;
-}
-
-.slider-banner-owl .owl-nav .owl-next {
-    right: 0;
-}
-
-.slider-banner-owl .item-slide img {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
 .slider-banner-slick .slick-prev,
 .slider-banner-slick .slick-next {
     padding: 18px 7px;
@@ -721,25 +690,6 @@ ul li a:hover:nth-child(4) {
     position: absolute;
 }
 
-.slider-banner-slick .slick-prev:before,
-.slider-banner-slick .slick-next:before {
-    display: none;
-}
-
-.slider-banner-slick .slick-prev {
-    left: 0;
-}
-
-.slider-banner-slick .slick-next {
-    right: 0;
-}
-
-.slider-banner-slick .item-slide img {
-    min-width: 100%;
-    min-height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
 
 .btn-facebook {
     background-color: #405D9D;
@@ -1416,61 +1366,7 @@ a[class*=card]:hover .title {
     max-width: none;
 }
 
-/* ================= TRACKING ============== */
-.tracking-wrap {
-    position: relative;
-    background-color: #ddd;
-    height: 7px;
-    display: flex;
-    margin-bottom: 60px;
-    margin-top: 50px;
-}
 
-.tracking-wrap .step {
-    flex-grow: 1;
-    width: 25%;
-    margin-top: -18px;
-    text-align: center;
-    position: relative;
-}
-
-.tracking-wrap .step::before {
-    height: 7px;
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    top: 18px;
-}
-
-.tracking-wrap .icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    border-radius: 100%;
-    background: #ddd;
-}
-
-.tracking-wrap .text {
-    display: block;
-    margin-top: 7px;
-}
-
-.tracking-wrap .step.active .icon {
-    background: #3167eb;
-    color: #fff;
-}
-
-.tracking-wrap .step.active .text {
-    font-weight: 400;
-    color: #000;
-}
-
-.tracking-wrap .step.active:before {
-    background: #3167eb;
-}
 
 .menu-category {
     margin: 0;

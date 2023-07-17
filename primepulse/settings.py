@@ -30,15 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = 'DEVELOPMENT' in os.environ
-#development = os.environ.get('DEVELOPMENT', False)
-#DEBUG = development
-#X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 
 #add heroku app name prime-pulse
 #ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-4fpyonbcoe6.ws-eu101.gitpod.io']
-
-#ALLOWED_HOSTS = ['prime-pulse.herokuapp.com', 'localhost']
-
 
 ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
 # Application definition
@@ -200,16 +195,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
     # Override static and media URLs in production
  #   STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
  #   MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_DIRS = [
-# 'primepulse/static',
-# ]
-#STATICFILES_DIRS = ['primepulse/static',
-                   # os.path.join(BASE_DIR, 'staticfiles')
-                   # ]
-# 'primepulse/static',
+,
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
