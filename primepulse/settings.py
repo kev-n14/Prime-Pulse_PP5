@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 #add heroku app name prime-pulse
-ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-4fpyonbcoe6.ws-eu101.gitpod.io']
-#ALLOWED_HOSTS = ['prime-pulse.herokuapp.com']
+#ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-4fpyonbcoe6.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['prime-pulse.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,15 +44,13 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    #'allauth',
-    #'allauth.account',
-    #'allauth.socialaccount',
     'cloudinary',
     'category',
     'accounts',
     'store',
     'carts',
     'orders',
+    'admin_honeypot',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +61,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_session_timeout.middleware.SessionTimeoutMiddleware',
 ]
+
+SESSION_EXPIRE_SECONDS = 3600  # 1 hour
+SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
+SESSION_TIMEOUT_REDIRECT = 'accounts/login'
 
 ROOT_URLCONF = 'primepulse.urls'
 
@@ -95,16 +98,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-#ACCOUNT_EMAIL_REQUIRED = True
-#ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-#ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-#ACCOUNT_USERNAME_MIN_LENGTH = 4
-#LOGIN_URL = '/accounts/login/'
-#LOGIN_REDIRECT_URL = '/'
-#LOGIN_REDIRECT_URL = False
-#LOGIN_REDIRECT_URL = ''
-#LOGOUT_REDIRECT_URL = '/index'
+
 WSGI_APPLICATION = 'primepulse.wsgi.application'
 
 AUTH_USER_MODEL = 'accounts.Account'
@@ -121,6 +115,7 @@ AUTH_USER_MODEL = 'accounts.Account'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+
 
 
 # Password validation
