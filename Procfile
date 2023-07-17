@@ -1,1 +1,1 @@
-web: gunicorn primepulse.wsgi:application
+web: gunicorn primepulse.wsgi
