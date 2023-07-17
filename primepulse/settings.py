@@ -29,7 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'DEVELOPMENT' in os.environ
+#DEBUG = 'DEVELOPMENT' in os.environ
+development = os.environ.get('DEVELOPMENT', False)
+DEBUG = development
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 #add heroku app name prime-pulse
 #ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-4fpyonbcoe6.ws-eu101.gitpod.io']
@@ -163,8 +166,10 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_URL = 'primepulse/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 #if 'USE_AWS' in os.environ:
