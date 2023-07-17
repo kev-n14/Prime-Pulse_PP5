@@ -29,10 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-#DEBUG = 'DEVELOPMENT' in os.environ
-development = os.environ.get('DEVELOPMENT', False)
-DEBUG = development
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+DEBUG = 'DEVELOPMENT' in os.environ
+#development = os.environ.get('DEVELOPMENT', False)
+#DEBUG = development
+#X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 #add heroku app name prime-pulse
 #ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-4fpyonbcoe6.ws-eu101.gitpod.io']
