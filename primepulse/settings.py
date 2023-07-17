@@ -33,8 +33,11 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 #add heroku app name prime-pulse
 #ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-4fpyonbcoe6.ws-eu101.gitpod.io']
-ALLOWED_HOSTS = ['prime-pulse.herokuapp.com', 'localhost']
-#ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
+
+#ALLOWED_HOSTS = ['prime-pulse.herokuapp.com', 'localhost']
+
+
+ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
