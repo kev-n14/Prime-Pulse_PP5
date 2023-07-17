@@ -4,7 +4,7 @@
 # Prime Pulse Application
 
 
-This site is 
+The Prime Pulse website is an e-commerce website that specializes in selling fitness equipment. The products listed on this website is from weights to cardio and everything in between.It is the one stop online shop for everything fitness related.
 
 ## Features
 ---
