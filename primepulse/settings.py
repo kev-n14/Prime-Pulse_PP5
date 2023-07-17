@@ -175,10 +175,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 
-#STATICFILES_DIRS = [BASE_DIR / 'static']
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#STATIC_ROOT = BASE_DIR / 'static'
+
 
 
 #if 'USE_AWS' in os.environ:
@@ -209,9 +206,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # STATICFILES_DIRS = [
 # 'primepulse/static',
 # ]
-STATICFILES_DIRS = ['primepulse/static',
-                    os.path.join(BASE_DIR, 'staticfiles')
-                    ]
+#STATICFILES_DIRS = ['primepulse/static',
+                   # os.path.join(BASE_DIR, 'staticfiles')
+                   # ]
 # 'primepulse/static',
 
 # Default primary key field type
