@@ -3,23 +3,18 @@
 {% block content%}
 <section class="section-content padding-y bg">
     <div class="container">
-
-        <!-- ============================ COMPONENT 1 ================================= -->
         <div class="card">
             <div class="row no-gutters">
                 <aside class="col-md-6">
                     <article class="gallery-wrap">
                         <div class="img-big-wrap">
                             <a href="#"><img src="{{ single_product.images.url}}"></a>
-                        </div> <!-- img-big-wrap.// -->
-
-                    </article> <!-- gallery-wrap .end// -->
+                        </div>
+                    </article>
                 </aside>
                 <main class="col-md-6 border-left">
-
                     <form action="{% url 'add_cart' single_product.id %}" method="GET">
                         <article class="content-body">
-
                             <h2 class="title">{{ single_product.product_name}}</h2>
                             <div class="rating-star">
                                 <span>
@@ -36,17 +31,11 @@
                                     <span>{{single_product.countReview}} reviews</span>
                                 </span>
                             </div>
-
-
                             <div class="mb-3">
                                 <var class="price h4">€ {{ single_product.price|floatformat:2}}</var>
                             </div>
-
                             <p>{{ single_product.description}}</p>
-
-
                             <hr>
-                            <!-- 2-->
                             <hr>
                             {% if single_product.stock <= 0 %}
                             <h5 class="text-danger">Out of Stock</h5>
@@ -55,23 +44,18 @@
                                     class="fa fa-shopping-cart"></i> </button>
                             {% endif %}
 
-                        </article> <!-- product-info-aside .// -->
+                        </article>
                     </form>
-                </main> <!-- col.// -->
-            </div> <!-- row.// -->
-        </div> <!-- card.// -->
-        <!-- ============================ COMPONENT 1 END .// ================================= -->
-
+                </main>
+            </div>
+        </div>
         <br>
-
         <div class="row">
             <div class="col-md-9">
-
                 <form action="{% url 'submit_review' single_product.id %}" method="POST">
                     {% csrf_token %}
                     <h5>Write Your Review</h5>
                     {{single_product.averageReview}}
-
                     <div>
                         <label>How do you rate this product?</label>
                         <br>
@@ -111,13 +95,11 @@
                         <p>You must purchase this item top be able to leave a review.</p>
                         {% endif %}
                         {% else %}
-
                         <p>You must be signed in to post a review. <span><a href="{% url 'login' %}">Sign in</a></span>
                         </p>
                         {% endif %}
                     </div>
                     {% include 'includes/alerts.html' %}
-
                 </form>
                 <header class="section-heading">
                     <h3>Customer Reviews</h3>
@@ -136,12 +118,10 @@
                             <span>{{single_product.countReview}} reviews</span>
                         </span>
                     </div>
-
                 </header>
                 {% for review in reviews %}
                 <article class="box mb-3">
                     <div class="icontext w-100">
-                        <!--<img src="{ static '.images/misc/profile/man_default.png'}" class="img-xs icon rounded-circle">-->
                         <div class="text">
                             <span class="date text-muted float-md-right">{{review.updated_at}} </span>
                             <h6 class="mb-1">{{review.user.full_name}} </h6>
@@ -159,9 +139,8 @@
                                         aria-hidden="true"></i>
                                 </span>
                             </div>
-
                         </div>
-                    </div> <!-- icontext.// -->
+                    </div>
                     <div class="mt-3">
                         <h6>{{review.subject}}</h6>
                         <p>
@@ -170,14 +149,9 @@
                     </div>
                 </article>
                 {% endfor %}
-
-
-
-            </div> <!-- col.// -->
-        </div> <!-- row.// -->
-
-
-    </div> <!-- container .//  -->
+            </div>
+        </div>
+    </div>
 </section>
-<!-- ========================= SECTION CONTENT END// ========================= -->
+
 {% endblock %}

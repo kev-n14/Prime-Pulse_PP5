@@ -10,54 +10,103 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 ---
 ### **Landing Page**
 
-![Landing Page]()
+![Landing Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/home_page_jqlbf4.png)
 
 ### **Navigation Bar**
 
-![Navigation Bar]()
+![Navigation Bar](https://res.cloudinary.com/dlulkctls/image/upload/v1689573129/readme-primepulse/home_1_fkkxko.png)
+
+
+### **Footer Section** 
+
+
+![Footer Section](https://res.cloudinary.com/dlulkctls/image/upload/v1689573918/readme-primepulse/footer_e63eaz.png)
+
 
 ### **Sign Up Page** 
 
-![Sign Up Page]()
+
+![Sign Up Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689573916/readme-primepulse/sign_up_sem3eo.png)
 
 
 ### **Login Page**
 
 
-![Login Page]()
+![Login Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572929/readme-primepulse/sign_in_kc0oxs.png)
 
 
 ### **Signout Page** 
 
 
 ![Signout Page]()
-### **The Add Expenses section**
+### **Store Page**
 
 
-![The Add Expenses section]()
+![Store Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572933/readme-primepulse/store_page_sdwpmj.png)
 
 
 
-### **Expense Form Section**
+### **Product Page**
 
 
-![Expense Form Section]()
+![Product Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572940/readme-primepulse/product_details_page_zbvly9.png)
 
 
-### **Expense Summary and Charts**
+### **Cart Page**
 
-![Expense Summmary and Charts]()
+![Cart Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/cart_iyhqbz.png)
 
 
-### **Edit Page**
+### **Billing Page**
 
-![Edit Page]()
+![Billing Address](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/billing_address_page_hkswlp.png)
+
+### **Review Page** 
+
+
+![Review Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572932/readme-primepulse/review_page_wjdtoj.png)
+### **Paypal Transaction Page** 
+
+![Paypal Transaction Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689573949/readme-primepulse/paypal_transaction_vum32d.png)
+### **Signout Page** 
+
+![Payment successful Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572931/readme-primepulse/payment_success_m8nag9.png)
+### **User Dashboard Page** 
+
+
+![User Dashboard Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/dashboard_main_bkealj.png)
+### **Orders Page** 
+
+
+![Orders Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/dashboard_my_orders_zpgpjy.png)
+### **Edit Profile Page** 
+
+
+![Edit Profile Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572929/readme-primepulse/dashboard_edit_profile_zeeeo1.png)
+### **Change Password  Page** 
+
+
+![Change Password Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572930/readme-primepulse/dashboard_change_password_fufnxy.png)
+### **Facebook Page** 
+
+
+![Facebook Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572934/readme-primepulse/facebook_1_b7esip.png)
+
+### **Facebook Second Page** 
+
+
+![Facebook Second Page](https://res.cloudinary.com/dlulkctls/image/upload/v1689572934/readme-primepulse/facebook_1_b7esip.png)
+
+
+
+
+
 
 
 ### **Features Left to Implement**
 In the future, we hope to add:
-* Separate user expense forms specific to each user.
-* 
+* More payment options 
+* Bigger selction of items
 
 
 ## User Experience (UX)
@@ -84,11 +133,11 @@ In the future, we hope to add:
 
 * ### **Design**
     * **Colour Scheme**
-        * 
+        * A soothing and warm purple and orange to invite the user. Complemented with white background and black and white text with blue buttons. 
     * **Typography**
         * 'Segoe UI'
     * **Imagery**
-         * 
+         * abstract large banner image with company logo in white.
  
 
 * ### **Wireframes**
@@ -97,16 +146,18 @@ In the future, we hope to add:
     * Sign Up - [View]()
     * Landing Page - [View]()
 
-## Agile Methodology
 
-Each User Story has defined outcome criteria to make it clear when the User Story has been completed. To view User stories click [here](https://github.com/users/kev-n14/projects/8). User stories were moved from Todo -> In Progress -> Done as each user story was completed.
 
 
 ## Security Features and Defensive Design
 ### User Authentication
-- 
+- Users must provide full name email address.
+- User is verified by email address.
+- django default admin page is has a path way of admin/. we changed this to a different path. By use honey a dumby admin site is created.
+- all sensitive imformation is stored in a env.py file.
 
 ### Form Validation
+- CSRF tokens prevent CSRF because without a token, an attacker cannot create valid requests to the backend server. For the Synchronised Token Pattern, CSRF tokens should not be transmitted using cookies. The CSRF token can be transmitted to the client as part of a response payload, such as a HTML or JSON response.
 
 ### Database Security
 
@@ -126,28 +177,20 @@ Each User Story has defined outcome criteria to make it clear when the User Stor
     * ElephantSQL provides a browser tool for SQL queries where you can create, read, update, and delete data directly from your web browser.
 1. [Django](https://www.djangoproject.com/):
     * Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. 
-1. [Django-allauth](https://django-allauth.readthedocs.io/en/latest/):
-    * integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.
-1. [Tailwindcss](https://tailwindcss.com/):
+1. [Bootstrap](https://getbootstrap.com/):
     * Tailwind CSS is an open-source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.
-1. [Chart. js](https://www.chartjs.org/):
-    * Chart.js is a free, open-source JavaScript library for data visualization, which supports eight chart types: bar, line, area, pie, bubble, radar, polar, and scatter.
 1. [Node. js](https://nodejs.org/en):
     * Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, that runs on the V8 JavaScript Engine and executes JavaScript code outside a web browser
 1. [favicon](https://www.flaticon.com/):
     * Used to create icons for web browser tab.
 1. [Google Fonts](https://fonts.google.com/):
     * Google fonts were used to choose the fonts for this site. the fonts were declared in the style.css file which is used on all pages throughout the site.
-
 1. [Font Awesome](https://fontawesome.com/):
     * Font Awesome was used on all pages throughout the website to add icons for social media links.
-
 1. [Gitpod](https://www.gitpod.io/):
     * Gitpod terminal to commit to Git and Push to GitHub.
-
 1. [GitHub](https://github.com/):
     * GitHub was used to store the site's code after being pushed from Gitpod.
-
 1. [Balsamiq](https://balsamiq.com/):
     * Balsamiq was used to create the wireframes during the design process.
 1. [Grammerly](https://app.grammarly.com/):
@@ -178,7 +221,6 @@ No errors were found when passing through the official [(Jigsaw) validator]()
 ### Testing User Stories from the User Experience (UX) Section
 #### **First Time Visitor Goals**
 1. As a First Time Visitor, 
-
 1. As a First Time Visitor, 
 1. As a First Time Visitor,  
     
@@ -229,13 +271,13 @@ This site was deployed to Heroku. The steps to deploy are as follows:
 ### **Forking the GitHub Repository**
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-- Log in to GitHub and Locate the repository at this link [Expense Tracker]().
+- Log in to GitHub and Locate the repository at this link [Prime Pulse]().
 - At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
 - A copy of the repository is now created.
 
 
 ### **Making a Local Clone**
-1. Log in to GitHub and locate the GitHub repository at this link [Expense Tracker]().
+1. Log in to GitHub and locate the GitHub repository at this link [Prime Pulse]().
 1. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the preferred cloning option, and then copy the link provided. 
 1. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 1. Open Git Bash
