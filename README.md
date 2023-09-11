@@ -6,7 +6,11 @@
 
 The Prime Pulse website is an e-commerce website that specializes in selling fitness equipment. The products listed on this website is from weights to cardio and everything in between.It is the one stop online shop for everything fitness related.
 
-## Features
+
+
+
+
+## Screenshots
 ---
 ### **Landing Page**
 
@@ -83,6 +87,18 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/facebook_1_b7esip.png" alt="Facebook Page" width="900"/>
 
 
+## Design
+### Wireframes
+You can download the wireframes for this website from this link [GoogleDrive](https://drive.google.com/drive/folders/1eaRgxIO0XQZy-wFDHgE63b_CZdl32TG1?usp=drive_link).
+
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454066/readme-primepulse/wireframes/Home_Page_rumz3j.png" alt="Home  Page" width="500"/>
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Sign_Up_jf7i3f.png" alt="Sign Up Page" width="500"/>
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Sign_In_pne7lv.png" alt="Sign In Page" width="500"/>
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Item_Page_jnk4sa.png" alt="Item Page" width="500"/>
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Cart_Page_ob4u8b.png" alt="Cart Page" width="500"/>
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454066/readme-primepulse/wireframes/Dashboard_Page_xguatb.png" alt="Dashboard Page" width="500"/>
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Edit_Profile_Page_hmyllb.png" alt="Edit Profile Page" width="500"/>
 
 
 
@@ -255,7 +271,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 ```
 1. Type **'Enter'** to create the local clone.
-
 
 ## Credits
 ---
