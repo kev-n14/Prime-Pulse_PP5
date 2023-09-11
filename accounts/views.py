@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import RegistrationForm, UserForm, UserProfileForm
 from .models import Account, UserProfile
 from orders.models import Order, OrderProduct
-from django.contrib import messages, auth
+from django.contrib import messages,auth
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 # verification email
@@ -49,8 +49,6 @@ def register(request):
             to_email = email
             send_email = EmailMessage(mail_subject, message, to=[to_email])
             send_email.send()
-            
-
             messages.success(request, 'Thank You for Signing Up. We have sent a Verification Email to your Email Address')
             return redirect('/accounts/login/?command=verification&email='+email)
 
@@ -115,10 +113,12 @@ def dashboard(request):
     }
     return render(request, 'accounts/dashboard.html', context)
 
+
 def activate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = Account._default_manager.get(pk=uid)
+        
     except(TypeError, ValueError, OverflowError, Account.DoesNotExist):
         user = None
     
