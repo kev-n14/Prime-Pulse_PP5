@@ -58,3 +58,14 @@ class UserProfileForm(forms.ModelForm):
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'form-control'
 
+class NewsletterForm(forms.ModelForm):
+    class Meta:
+        model = Account
+        fields = ['email']
+
+    def __init__(self, *args, **kwargs):
+        super(NewsletterForm, self).__init__(*args, **kwargs)
+        self.fields['email'].widget.attrs['placeholder'] = 'Enter Email'
+        
+        for field in self.fields:
+            self.fields[field].widget.attrs['class'] = 'form-control'

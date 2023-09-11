@@ -265,3 +265,20 @@ def order_detail(request, order_id):
 def newsletter(request):
     
     return render(request, 'accounts/newsletter.html')
+
+@login_required(login_url='login')
+def newsletter_email(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        
+        # Check if email is provided and is a valid email address
+        if not email:
+            messages.error(request, 'Please provide an email address.')
+            return redirect('newsletter')
+
+        user = auth.authenticate(request, email=email)
+
+        messages.success(request, 'Thanks for Joining Our Newsletter. Check your Emails for Our Latest News')
+        return redirect('newsletter_email')
+
+    return render(request, 'accounts/newsletter_email.html')
