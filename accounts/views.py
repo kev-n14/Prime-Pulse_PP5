@@ -111,8 +111,10 @@ def logout(request):
     return redirect('login')
 
 
-def activate(request):
-    return
+def activate(request, uidb64, token):
+    return HttpResponse('ok')
+
+     
 
 
 @login_required(login_url='login')
