@@ -54,7 +54,7 @@ def register(request):
             mail_subject = 'Please activate your account'
             message = render_to_string('accounts/account_verification_email.html', {
                 'user': user,
-                'domain': current_site,
+                'domain': 'https://prime-pulse-d780887a098c.herokuapp.com/',
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': default_token_generator.make_token(user),
             })
