@@ -191,27 +191,6 @@ def forgotPassword(request):
 def resetpassword_validate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
-        logger = logging.getLogger(__name__)
-        logger.info(f"uidb64: {uidb64}, decoded uid: {uid}")
-        user = Account._default_manager.get(pk=uid)
-    
-    except (TypeError, ValueError, OverflowError, Account.DoesNotExist):
-        user = None
-    
-    logger.info(f"token: {token}, user: {user}")
-    
-    if user is not None and default_token_generator.check_token(user, token):
-        request.success['uid'] = uid
-        messages.success(request, 'Please reset your password')
-        return redirect('resetpassword')
-    else:
-        messages.error(request, 'This link has been expired!')
-        return redirect('login')
-
-
-def resetpassword(request):
-    try:
-        uid = urlsafe_base64_decode(uidb64).decode()
         user = Account._default_manager.get(pk=uid)
     except(TypeError, ValueError, OverflowError, Account.DoesNotExist):
         user = None
@@ -223,6 +202,25 @@ def resetpassword(request):
     else:
         messages.error(request, 'This link has been expired!')
         return redirect('login')
+
+
+def resetpassword(request):
+    if request.method == 'POST':
+        password = request.POST['password']
+        confirm_password = request.POST['confirm_password']
+
+        if password == confirm_password:
+            uid = request.session.get('uid')
+            user = Account.objects.get(pk=uid)
+            user.set_password(password)
+            user.save()
+            messages.success(request, 'Password reset successful')
+            return redirect('login')
+        else:
+            messages.error(request, 'Password do not match!')
+            return redirect('resetPassword')
+    else:
+        return render(request, 'accounts/resetPassword.html')
 
 @login_required(login_url='login')
 def my_orders(request):
