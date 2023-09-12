@@ -100,7 +100,12 @@ You can download the wireframes for this website from this link [GoogleDrive](ht
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454066/readme-primepulse/wireframes/Dashboard_Page_xguatb.png" alt="Dashboard Page" width="500"/>
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Edit_Profile_Page_hmyllb.png" alt="Edit Profile Page" width="500"/>
 
-
+* **Colour Scheme**
+        * A soothing and warm purple and orange to invite the user. Complemented with white background and black and white text with blue buttons. 
+    * **Typography**
+        * 'Segoe UI'
+    * **Imagery**
+         * abstract large banner image with company logo in white.
 
 
 ## Features
@@ -143,15 +148,6 @@ In the future, we hope to add:
         1. As a frequent visitor, I want to be able to see new product arrivals or updates on the homepage, so I can stay informed about the latest fitness equipment offerings.
         2. As a frequent visitor, I want to be able to quickly access my previously viewed products or categories, making it convenient to revisit items of interest.
         3. As a frequent visitor, I want to have the option to subscribe to a newsletter or email updates, allowing me to receive notifications about exclusive discounts, promotions, or upcoming product releases.
-
-* ### **Design**
-    * **Colour Scheme**
-        * A soothing and warm purple and orange to invite the user. Complemented with white background and black and white text with blue buttons. 
-    * **Typography**
-        * 'Segoe UI'
-    * **Imagery**
-         * abstract large banner image with company logo in white.
-
 
 
 ## Security Features and Defensive Design
