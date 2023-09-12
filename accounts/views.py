@@ -38,19 +38,11 @@ def register(request):
             #Create User Profile
             profile = UserProfile()
             profile.user_id = user.id
-            profile.profile_picture = 'images/misc/profile/default_profile_picture.jpeg'
+            if 'profile_picture' in request.FILES:
+                profile.profile_picture = request.FILES['profile_picture']
+            else:
+                profile.profile_picture = 'images/misc/profile/default_profile_picture.jpeg'
             profile.save()
-
-            # email
-            #message_email = request.POST['email']
-            #send_mail(
-            #    'Activated',
-            #    'Hello '+ first_name,
-            #    message_email,
-            #    ['primepulse21@gmail.com'],
-            #)
-            #return redirect('/accounts/login/?command=verification&email='+email)
-
 
             #USER ACTIVATION
             current_site = get_current_site(request)
