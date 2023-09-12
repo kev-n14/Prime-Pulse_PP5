@@ -16,9 +16,10 @@ from django.conf import settings
 from carts.models import CartItem, Cart
 from carts.views import _cart_id
 from django.contrib.auth import get_user_model
+import logging  
 #from allauth.account.forms import LoginForm, SignupForm
 
-logger = logging.getLogger(__name__)
+
 
 def register(request):
     if request.method == 'POST':
@@ -190,6 +191,7 @@ def forgotPassword(request):
 def resetpassword_validate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
+        logger = logging.getLogger(__name__)
         logger.info(f"uidb64: {uidb64}, decoded uid: {uid}")
         user = Account._default_manager.get(pk=uid)
     
