@@ -194,10 +194,11 @@ def resetpassword_validate(request, uidb64, token):
     if user is not None and default_token_generator.check_token(user, token):
         request.success['uid'] = uid
         messages.success(request, 'Please reset your password')
-        return redirect('resetPassword')
+        return redirect('resetpassword')
     else:
         messages.error(request, 'This link has been expired!')
         return redirect('login')
+
 
 def resetPassword(request):
     if request.method == 'POST':
@@ -214,9 +215,9 @@ def resetPassword(request):
 
         else:
             messages.error(request, 'Password do not match')
-            return redirect('resetPassword')
+            return redirect('resetpassword')
     else:
-        return render(request, 'accounts/resetPassword.html')
+        return render(request, 'accounts/resetpassword.html')
 
 @login_required(login_url='login')
 def my_orders(request):
