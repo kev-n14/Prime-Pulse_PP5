@@ -169,7 +169,7 @@ def forgotPassword(request):
             mail_subject = 'Reset Your Password'
             message = render_to_string('accounts/reset_password_email.html', {
                 'user': user,
-                'domain': current_site,
+                'domain': 'prime-pulse-d780887a098c.herokuapp.com',
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': default_token_generator.make_token(user),
             })
