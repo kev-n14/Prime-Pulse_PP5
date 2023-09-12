@@ -210,31 +210,12 @@ MESSAGE_TAGS = {
 }
 
 
-#email
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_PORT = 587
-#EMAIL_HOST_USER = 'primepulse21@gmail.com'  # Replace with your Gmail email address
-#EMAIL_HOST_PASSWORD = 'wiumjopgibjtmsqx'  # Replace with your Gmail app-specific password
-#EMAIL_USE_TLS = True
-#EMAIL_USE_SSL = False
 
-#SMTP configuration
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_PORT = 587
-#EMAIL_HOST_USER = 'primepulse21@gmail.com'  # Replace with your Gmail email address
-#EMAIL_HOST_PASSWORD = 'wiumjopgibjtmsqx'  # Replace with your Gmail app-specific password
-#EMAIL_USE_TLS = True
-#EMAIL_HOST = os.environ.get('EMAIL_HOST')
-#EMAIL_PORT = os.environ.get('EMAIL_PORT')
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-#EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS')
 
 
 if 'DEVELOPMENT' in os.environ:
    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-   DEFAULT_FROM_EMAIL = 'primepulse21@gmail.com' #'primnepulse@example.com'
+   DEFAULT_FROM_EMAIL = 'primepulse21@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
