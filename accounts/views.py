@@ -21,10 +21,6 @@ from carts.views import _cart_id
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
-
-        
-
-
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
             last_name = form.cleaned_data['last_name']
@@ -65,6 +61,7 @@ def register(request):
             to_email = email
             send_email = EmailMessage(mail_subject, message, to=[to_email])
             send_email.send()
+            return redirect('/accounts/login/?command=verification&email='+email)
 
     else:
         form = RegistrationForm()
