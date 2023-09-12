@@ -184,11 +184,13 @@ def forgotPassword(request):
 
     return render(request, 'accounts/forgotPassword.html')
 
+
 def resetpassword_validate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = Account._default_manager.get(pk=uid)
-    except(TypeError, ValueError, OverflowError, Account.DoesNotExist):
+    
+    except (TypeError, ValueError, OverflowError, Account.DoesNotExist):
         user = None
     
     if user is not None and default_token_generator.check_token(user, token):
@@ -294,7 +296,7 @@ def newsletter(request):
     
     return render(request, 'accounts/newsletter.html')
 
-@login_required(login_url='login')
+
 def newsletter_email(request):
     if request.method == 'POST':
         email = request.POST.get('email')
@@ -306,6 +308,13 @@ def newsletter_email(request):
         user = auth.authenticate(request, email=email)
 
         messages.success(request, 'Thanks for Joining Our Newsletter. Check your Emails for Our Latest News')
+        message = render_to_string('accounts/newsletter_verification_email.html', {
+                'user': user,
+                
+            })
+        to_email = email
+        send_email = EmailMessage(mail_subject, message, to=[to_email])
+        send_email.send()
         return redirect('newsletter_email')
 
     return render(request, 'accounts/newsletter_email.html')
