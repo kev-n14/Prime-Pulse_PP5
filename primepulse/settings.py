@@ -34,9 +34,9 @@ DEBUG = 'DEVELOPMENT' in os.environ#
 #DEBUG = os.environ.get("DEBUG", False)
 
 #add heroku app name prime-pulse
-ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-lburhklft8f.ws-eu104.gitpod.io']
+#ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-lburhklft8f.ws-eu104.gitpod.io']
 
-#ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
@@ -210,13 +210,21 @@ MESSAGE_TAGS = {
 }
 
 
-#SMTP configuration
-#EMAIL_HOST = os.environ.get('EMAIL_HOST')
-#EMAIL_PORT = os.environ.get('EMAIL_PORT', cast=int)
-#EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-#EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', cast=bool)
+#email
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'primepulse21@gmail.com'  # Replace with your Gmail email address
+#EMAIL_HOST_PASSWORD = 'wiumjopgibjtmsqx'  # Replace with your Gmail app-specific password
+#EMAIL_USE_TLS = True
+#EMAIL_USE_SSL = False
 
+#SMTP configuration
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'primepulse21@gmail.com'  # Replace with your Gmail email address
+#EMAIL_HOST_PASSWORD = 'wiumjopgibjtmsqx'  # Replace with your Gmail app-specific password
+#EMAIL_USE_TLS = True
 #EMAIL_HOST = os.environ.get('EMAIL_HOST')
 #EMAIL_PORT = os.environ.get('EMAIL_PORT')
 #EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
@@ -224,13 +232,14 @@ MESSAGE_TAGS = {
 #EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS')
 
 
-#if 'DEVELOPMENT' in os.environ:
- #   EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-  #  DEFAULT_FROM_EMAIL = 'primnepulse@example.com'
-#else:
-    #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    #EMAIL_USE_TLS = True
-    #EMAIL_PORT = 587
-    #EMAIL_HOST = 'smtp.gmail.com'
-    #EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    #DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+if 'DEVELOPMENT' in os.environ:
+   EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+   DEFAULT_FROM_EMAIL = 'primepulse21@gmail.com' #'primnepulse@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')

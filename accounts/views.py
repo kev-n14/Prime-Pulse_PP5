@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import RegistrationForm, UserForm, UserProfileForm
+from .forms import RegistrationForm, UserForm, UserProfileForm, NewsletterForm
 from .models import Account, UserProfile
 from orders.models import Order, OrderProduct
-from django.contrib import messages,auth
+from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 # verification email
@@ -11,7 +11,8 @@ from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
-from django.core.mail import EmailMessage
+from django.core.mail import EmailMessage, send_mail
+from django.conf import settings
 from carts.models import CartItem, Cart
 from carts.views import _cart_id
 #from allauth.account.forms import LoginForm, SignupForm
@@ -20,6 +21,10 @@ from carts.views import _cart_id
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
+
+        
+
+
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
             last_name = form.cleaned_data['last_name']
@@ -37,20 +42,31 @@ def register(request):
             profile.profile_picture = 'default/default-user.png'
             profile.save()
 
-            #USER ACTIVATION
-            current_site = get_current_site(request)
-            mail_subject = 'Please activate your account'
-            message = render_to_string('accounts/account_verification_email.html', {
-                'user': user,
-                'domain': current_site,
-                'uid': urlsafe_base64_encode(force_bytes(user.pk)),
-                'token': default_token_generator.make_token(user),
-            })
-            to_email = email
-            send_email = EmailMessage(mail_subject, message, to=[to_email])
-            send_email.send()
-            messages.success(request, 'Thank You for Signing Up. We have sent a Verification Email to your Email Address')
+            # email
+            message_email = request.POST['email']
+            send_mail(
+                'Activated',
+                'Hello '+ first_name,
+                message_email,
+                ['primepulse21@gmail.com'],
+            )
             return redirect('/accounts/login/?command=verification&email='+email)
+
+
+            #USER ACTIVATION
+            #current_site = get_current_site(request)
+            #mail_subject = 'Please activate your account'
+            #message = render_to_string('accounts/account_verification_email.html', {
+                #'user': user,
+               # 'domain': current_site,
+                #'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+                #'token': default_token_generator.make_token(user),
+            #})
+            #to_email = email
+            #send_email = EmailMessage(mail_subject, message, to=[to_email])
+            #send_email.send()
+            #messages.success(request, 'Thank You for Signing Up. We have sent a Verification Email to your Email Address')
+            #return redirect('/accounts/login/?command=verification&email='+email)
 
     else:
         form = RegistrationForm()
@@ -270,7 +286,6 @@ def newsletter(request):
 def newsletter_email(request):
     if request.method == 'POST':
         email = request.POST.get('email')
-        
         # Check if email is provided and is a valid email address
         if not email:
             messages.error(request, 'Please provide an email address.')

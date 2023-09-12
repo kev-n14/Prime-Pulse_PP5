@@ -1,32 +1,26 @@
-{% autoescape off %}
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<section class="section-content padding-y">
+    <div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+        <article class="card-body">
+            <header class="mb-4">
 
-<div class="container">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Join PrimePulse's Exclusive Newsletter</h1>
+                    <p class="lead">Thank You For Signing Up To Our Newsletter</p>
+                    {% include 'includes/alerts.html' %}
+                </div>
+                <div class="form-group text-center">
+                    <div class="col-md-6 mx-auto">
+                        <!-- Adjust the column size as needed -->
+                        <a href="{% url 'dashboard' %}" class="btn btn-primary">Go Back To Dashboard</a>
+                    </div>
+                </div>
+            </header>
 
-    <h1>PrimePulse Weekly Review</h1>
-    <p>Dear PrimePulse Shoppers,</p>
-    <p>Here's a recap of the week's top products and exciting offers:</p>
-    <!-- Product 1 -->
-    <div class="product">
-        <img src="" alt="Product 1">
-        <p>Product Name 1</p>
-        <p>Price: €</p>
-        <a href="" class="btn">Shop Now</a>
+        </article>
     </div>
-
-    <!-- Product 2 -->
-    <div class="product">
-        <img src="" alt="Product 2">
-        <p>Product Name 2</p>
-        <p>Price: €</p>
-        <a href="" class="btn">Shop Now</a>
-    </div>
-
-    <!-- Add more products as needed -->
-
-    <p>Don't miss out on these amazing deals. Visit PrimePulse to explore more products and offers.</p>
-    <a href="" class="btn">Visit PrimePulse</a>
-    <p>If you have any questions or need assistance, feel free to contact our support team.</p>
-    <p>Thank you for choosing PrimePulse for your shopping needs!</p>
-</div>
-
-{% endautoescape%}
+    <br><br>
+</section>
+{% endblock%}
