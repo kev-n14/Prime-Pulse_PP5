@@ -300,21 +300,39 @@ def newsletter(request):
 def newsletter_email(request):
     if request.method == 'POST':
         email = request.POST.get('email')
+        
         # Check if email is provided and is a valid email address
         if not email:
             messages.error(request, 'Please provide an email address.')
             return redirect('newsletter')
-
+        
+        # Authenticate the user (assuming you have a custom user model)
         user = auth.authenticate(request, email=email)
-
-        messages.success(request, 'Thanks for Joining Our Newsletter. Check your Emails for Our Latest News')
-        message = render_to_string('accounts/newsletter_verification_email.html', {
+        
+        # Check if the user exists and is active (you can customize this logic)
+        if user is not None and user.is_active:
+            messages.success(request, 'Thanks for Joining Our Newsletter. Check your Emails for Our Latest News')
+            
+            # Construct the email subject
+            mail_subject = 'Newsletter Verification'
+            
+            # Construct the email message
+            current_site = get_current_site(request)
+            message = render_to_string('accounts/newsletter_verification_email.html', {
                 'user': user,
-                
+                'domain': current_site.domain,
+                'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+                'token': default_token_generator.make_token(user),
             })
-        to_email = email
-        send_email = EmailMessage(mail_subject, message, to=[to_email])
-        send_email.send()
-        return redirect('newsletter_email')
+            
+            # Send the email
+            to_email = email
+            send_email = EmailMessage(mail_subject, message, to=[to_email])
+            send_email.send()
+            
+            return redirect('newsletter_email')
+        else:
+            messages.error(request, 'Email address did not match a registered user')
+            return redirect('newsletter')
 
     return render(request, 'accounts/newsletter_email.html')
