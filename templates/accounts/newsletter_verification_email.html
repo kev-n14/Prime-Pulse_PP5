@@ -1,60 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+{% autoescape off %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimePulse Weekly Review</title>
-</head>
+Hi {{user.first_name}},
 
-<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
+PrimePulse Weekly Review,
 
-    <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff; border: 1px solid #ddd;">
-        <h1 style="color: #333;">PrimePulse Weekly Review</h1>
+Dear PrimePulse Shoppers,
+Here's a recap of the week's top products and exciting offers:
 
-        <p>Dear PrimePulse Shoppers,</p>
+DEAL 1
+Product Name : HIT Excerise Bike
+Price Was: € 390.00
+Price Now: € 349.00
 
-        <p>Here's a recap of the week's top products and exciting offers:</p>
+DEAL 2
+Product Name : Elite Treadmill
+Price Was: € 320.00
+Price Now: € 250.00
 
-        {% for product in products %}
-        {% if forloop.counter0 == 2 %}
-        <div style="margin-bottom: 20px;">
-            <a href="{{ product.get_url }}">
-                <img src="{{ product.images.url }}" alt="{{ product.product_name }}" style="max-width: 100%;">
-            </a>
-            <p style="font-size: 18px; color: #333; margin-top: 10px;">
-                <a href="{{ product.get_url }}"
-                    style="text-decoration: none; color: #333;">{{ product.product_name }}</a>
-            </p>
-            <p style="font-size: 16px; color: #333;">Price: €{{ product.price }}</p>
-        </div>
-        {% endif %}
-        {% endfor %}
+DEAL 3
+Product Name : Chin Up Bar
+Price Was: € 220.00
+Price Now: € 150.00
 
-        <p>Product Name 1</p>
-        <p>Price: €{{ product.price }}</p>
-        <a href="{{ product.get_url }}"
-            style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none;">Shop
-            Now</a>
 
-        <p>Product Name 2</p>
-        <p>Price: €{{ product.price }}</p>
-        <a href="{{ product.get_url }}"
-            style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none;">Shop
-            Now</a>
 
-        <p>Don't miss out on these amazing deals. Visit PrimePulse to explore more products and offers.</p>
+Don't miss out on these amazing deals. Visit PrimePulse to explore more products and offers.
+Visit PrimePulse
+If you have any questions or need assistance, feel free to contact our support team.
+Thank you for choosing PrimePulse for your shopping needs!
 
-        <a href="https://www.primepulse.com"
-            style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: #fff; text-decoration: none;">Visit
-            PrimePulse</a>
 
-        <p>If you have any questions or need assistance, feel free to contact our support team.</p>
-
-        <p>Thank you for choosing PrimePulse for your shopping needs!</p>
-    </div>
-
-</body>
-
-</html>
+{% endautoescape%}
