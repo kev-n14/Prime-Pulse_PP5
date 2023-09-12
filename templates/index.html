@@ -16,6 +16,7 @@
             <a href="{% url 'store' %}" class="btn btn-outline-primary float-right">See all</a>
             <h3 class="section-title">Popular products</h3>
         </header>
+
         <div class="row">
             {% for product in products %}
             <div class="col-md-3">
@@ -25,6 +26,7 @@
                     <figcaption class="info-wrap">
                         <a href="{{product.get_url}}" class="title">{{product.product_name}}</a>
                         <div class="price mt-1">€{{product.price}}</div>
+                        <div class="price mt-1">€{{1.price}}</div>
                     </figcaption>
                 </div>
             </div>

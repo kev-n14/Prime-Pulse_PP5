@@ -6,9 +6,25 @@ PrimePulse Weekly Review,
 
 Dear PrimePulse Shoppers,
 Here's a recap of the week's top products and exciting offers:
+{% for product in products %}
+{% if forloop.counter0 == 2 %} {# Check if it's the third product (index 2) #}
+<div class="col-md-3">
+    <div class="card card-product-grid">
+        <a href="{{ product.get_url }}" class="img-wrap">
+            <img src="{{ product.images.url }}">
+        </a>
+        <figcaption class="info-wrap">
+            <a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
+            <div class="price mt-1">€{{ product.price }}</div>
 
+            {# Replace 'another_field' with the specific field you want to access #}
+        </figcaption>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
 Product Name 1
-Price: €
+Price: € {{product.price}}
 Shop Now
 
 
