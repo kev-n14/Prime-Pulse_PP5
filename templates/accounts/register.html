@@ -6,13 +6,6 @@
         <article class="card-body">
             {% include 'includes/alerts.html' %}
 
-            {%if user.first_name %}
-            <center>
-                <h2> Thanks {{user.full_name}}</h2>
-                <p> we have received your email</p>
-            </center>
-            {% else %}
-
             <header class="mb-4">
                 <h4 class="card-title">Sign up</h4>
             </header>
@@ -60,5 +53,4 @@
     <p class="text-center mt-4">Already have an account? <a href="{% url 'login'%}">Log In</a></p>
     <br><br>
 </section>
-{% endif %}
 {% endblock%}

@@ -30,8 +30,8 @@ from primepulse.views import MySitemap
 handler404 = 'primepulse.views.page_not_found'
 
 urlpatterns = [
-    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
-    path('securelogin/', admin.site.urls),
+    #path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('', views.home, name='home'),
     path('store/', include('store.urls')),
