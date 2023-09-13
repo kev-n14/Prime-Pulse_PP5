@@ -4,7 +4,6 @@
 <!-- ========================= SECTION MAIN ========================= -->
 <section class="section-intro padding-y-sm">
     <div class="container">
-
         <div class="intro-banner-wrap">
             <img src="{% static 'images/banners/banner_image_1.jpg'%}" class="img-fluid rounded">
         </div>
@@ -16,7 +15,6 @@
             <a href="{% url 'store' %}" class="btn btn-outline-primary float-right">See all</a>
             <h3 class="section-title">Popular products</h3>
         </header>
-
         <div class="row">
             {% for product in products %}
             <div class="col-md-3">

@@ -10,8 +10,6 @@
             href="{% url 'change_password'%}">Change Password </a>
         <a class="list-group-item {% if '/newsletter/' in request.path %} active {% endif%}"
             href="{% url 'newsletter' %}">Sign Up To Our News Letter </a>
-        <a class="list-group-item {% if '/resetpassword/' in request.path %} active {% endif%}"
-            href="{% url 'resetpassword' %}">Reset password</a>
     </ul>
     <br>
     <a class="btn btn-light btn-block" href="{% url 'logout'%}"> <i class="fa fa-power-off"></i> <span class="text">Log

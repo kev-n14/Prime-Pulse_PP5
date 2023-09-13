@@ -104,6 +104,7 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 [Back to Table of Contents ⇧](#table-of-contents)
 
 ## Design
+---
 ### Wireframes
 You can download the wireframes for this website from this link [GoogleDrive](https://drive.google.com/drive/folders/1eaRgxIO0XQZy-wFDHgE63b_CZdl32TG1?usp=drive_link).
 <details>
@@ -119,7 +120,7 @@ You can download the wireframes for this website from this link [GoogleDrive](ht
 
 </details> 
 
-
+---
 ### ER Diagram
 <details>
 <summary>ER Diagram</summary>
@@ -127,11 +128,11 @@ You can download the wireframes for this website from this link [GoogleDrive](ht
 ![ER Diagram](https://res.cloudinary.com/dlulkctls/image/upload/v1694597163/readme-primepulse/ER_diagram_bnvttl.png)
 </details> 
 
-
+---
 
 
 This code defines the structure of a relational database using the Database Markup Language (DBML). Each table in the database is defined with its attributes, data types, constraints, and relationships. Here's a brief description of each table and its purpose:
----
+
 **accounts** Table:
 - Stores information about user accounts.
 - Includes fields for first name, last name, username, email, phone number, and various status flags.
@@ -185,6 +186,7 @@ Overall, this Database outlines the structure of a comprehensive e-commerce data
 
 
 ### Design Elements Overview
+---
 **Colour Scheme**
 * A soothing and warm purple and orange to invite the user. Complemented with white background and black and white text with blue buttons. 
 **Typography**
@@ -211,6 +213,7 @@ Overall, this Database outlines the structure of a comprehensive e-commerce data
 
 
 ### **Features Left to Implement**
+---
 In the future, we hope to add:
 * More payment options 
 * Bigger selection of items
@@ -296,6 +299,7 @@ A Marking Strategy, is essential for attracting and retaining customers.
         3. As a frequent visitor, I want to have the option to subscribe to a newsletter or email updates, allowing me to receive notifications about exclusive discounts, promotions, or upcoming product releases.
 
 * ### **Test Cases: User stories**
+---
 * ### **First-Time Test Cases**
 1. As a user, I want to be able to browse through a wide range of fitness equipment products, so I can find the items that meet my fitness goals and preferences.
 <details>
@@ -498,7 +502,8 @@ A Marking Strategy, is essential for attracting and retaining customers.
 ---
 
 
-#### Development Methodology
+### Development Methodology
+---
 * The development followed an Agile methodology on the [PrimePulse github Project] (https://github.com/users/kev-n14/projects/9)
 
 <details>
@@ -510,6 +515,7 @@ A Marking Strategy, is essential for attracting and retaining customers.
 [Back to Table of Contents ⇧](#table-of-contents)
 
 ## Security Features and Defensive Design
+---
 ### User Authentication
 - Users must provide full name email address when creating an account
 - User is verified by email address.
@@ -517,10 +523,11 @@ A Marking Strategy, is essential for attracting and retaining customers.
 - all sensitive information is stored in a env.py file.
 
 ### Form Validation
+---
 - CSRF tokens prevent CSRF because without a token, an attacker cannot create valid requests to the backend server. For the Synchronised Token Pattern, CSRF tokens should not be transmitted using cookies. The CSRF token can be transmitted to the client as part of a response payload, such as a HTML or JSON response.
 
 ### Database Security
-
+---
 * **Secure Connection (SSL/TLS):** Configure your application to connect to ElephantSQL using a secure SSL/TLS connection. This helps encrypt data transmitted between your application and the database server, protecting it from interception.
 
 * **Strong Authentication:** Use strong and unique credentials (username and password) for accessing your ElephantSQL database.
@@ -538,7 +545,8 @@ Regularly rotate your database credentials to maintain security.
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
- ### Frameworks - Libraries - Programs Used
+ ### Frameworks - Programs Used
+ ---
 1. [Python](https://www.python.org/):
     * Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule. Python is dynamically typed and garbage-collected.
 1. [ElephantSQL](https://www.elephantsql.com/):
@@ -567,6 +575,24 @@ Regularly rotate your database credentials to maintain security.
     * For Transactions.
 
 
+### Libraries
+
+* cloudinary_storage
+* django.contrib.admin
+* django.contrib.auth
+* django.contrib.contenttypes
+* django.contrib.sessions
+* django.contrib.messages
+* django.contrib.staticfiles
+* django.contrib.sites
+* cloudinary
+* category
+* accounts
+* store
+* carts
+* orders
+* admin_honeypot
+
 [Back to Table of Contents ⇧](#table-of-contents)
 
 
@@ -577,11 +603,10 @@ Regularly rotate your database credentials to maintain security.
 The W3C Markup Validator, W3C jigsaw CSS Validator, and PEP8 Code Institute validator Services were used to validate the project to ensure there were no major errors in the project.
 * **HTML**
 1. Home Page - Document checking completed. No errors or warnings to show.[W3C validator]()
-1. Landing Page - Document checking completed. No errors or warnings to show.[W3C validator]()
 1. Edit Page - Document checking completed. No errors or warnings to show.[W3C validator]()
 1. Login Page - Document checking completed. No errors or warnings to show.[W3C validator]()
 1. Sign Up - Document checking completed. No errors or warnings to show.[W3C validator]()
-1. Sign Out- Document checking completed. No errors or warnings to show.[W3C validator]()
+1. Landing Page - Document checking completed. No errors or warnings to show.[W3C validator]()
 ![HTML Validator ]()
 * **CSS**
 No errors were found when passing through the official [(Jigsaw) validator]()
@@ -589,7 +614,8 @@ No errors were found when passing through the official [(Jigsaw) validator]()
 * **Python**
 * [PEP8 Code Institute validator:] (https://pep8ci.herokuapp.com/#)
     * A few minor errors:
-        * 
+        * E501 line too long
+        * W293 blank line contains whitespace
 
 [Back to Table of Contents ⇧](#table-of-contents)
 
@@ -604,6 +630,7 @@ This site was deployed to Heroku. The steps to deploy are as follows:
 
 
 ### **Forking the GitHub Repository**
+---
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 - Log in to GitHub and Locate the repository at this link [Prime Pulse]().
@@ -612,6 +639,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 
 ### **Making a Local Clone**
+---
 1. Log in to GitHub and locate the GitHub repository at this link [Prime Pulse]().
 2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the preferred cloning option, and then copy the link provided. 
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.

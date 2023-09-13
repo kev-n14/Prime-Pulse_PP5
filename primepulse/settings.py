@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
 import dj_database_url
@@ -30,12 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = 'DEVELOPMENT' in os.environ
-#DEBUG = True
-#DEBUG = os.environ.get("DEBUG", False)
 
-#ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-lburhklft8f.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['8000-kevn14-primepulsepp5-lburhklft8f.ws-eu104.gitpod.io']
 
-ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
+#ALLOWED_HOSTS = ['prime-pulse-d780887a098c.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
@@ -110,12 +108,7 @@ AUTH_USER_MODEL = 'accounts.Account'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-# }
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
@@ -176,7 +169,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-from django.contrib.messages import constants as messages
+
 
 MESSAGE_TAGS = {
     messages.ERROR: "danger",
