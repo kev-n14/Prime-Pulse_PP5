@@ -223,61 +223,52 @@ In the future, we hope to add:
 ## Marketing Strategy
 ---
 A Marking Strategy, is essential for attracting and retaining customers.
-1. Define Your Target Audience:
-Identify and understand your ideal customers. Consider demographics, interests, behavior, and buying habits. Create buyer personas to guide your marketing efforts effectively.
+1. Target Audience:
+    * Fitness Enthusiasts: Individuals who are passionate about fitness, whether they are beginners or seasoned athletes, looking for high-quality fitness equipment to support their workouts.
+    * Home Gym Owners: People who have dedicated spaces for home gyms and need equipment like treadmills, dumbbells, resistance bands, and more to maintain their fitness routines at home.
+    * Health-Conscious Consumers: Individuals focused on improving their overall health and well-being by investing in fitness equipment for cardiovascular workouts, strength training, or flexibility exercises.
+    * Professional Athletes: Professional athletes, trainers, and coaches who require specialized equipment for sports training and conditioning.
+    * Gym Owners: Owners of fitness centers and commercial gyms seeking to purchase equipment to furnish their facilities and cater to their clients' needs.
+    * Physical Therapy Patients: Individuals undergoing physical therapy or rehabilitation, requiring specific fitness equipment to aid in their recovery and exercise routines.
+    * Weight Loss Seekers: People on weight loss journeys looking for fitness equipment to support their fitness and exercise plans.
+    * Budget-Conscious Shoppers: Those looking for affordable yet reliable fitness equipment options to fit their budget constraints.
+    * Gift Shoppers: Shoppers searching for fitness-related gifts for friends and family members who prioritize health and fitness.
+    * Online Shoppers: People who prefer the convenience of online shopping and access to a wide range of fitness equipment options from the comfort of their homes.
+
 
 2. Set Clear Marketing Objectives:
-Determine what you want to achieve with your marketing efforts. Common e-commerce objectives include increasing website traffic, boosting sales, expanding your customer base, and enhancing brand awareness.
+    * Increase Website Traffic: Aim to grow organic and referral website traffic by a certain percentage each month through search engine optimization (SEO), content marketing, and social media promotion.
+    * Boost Sales Revenue: Set monthly, quarterly, and annual revenue targets. Track sales growth and monitor the average order value to ensure steady revenue increase.
+    * Expand Customer Base: Focus on acquiring new customers and increasing the customer database. Measure the growth in the number of registered users.
+    * Enhance Brand Awareness: Measure brand visibility and recognition through social media mentions, brand searches, and engagement metrics.
+    * Increase Customer Retention: Develop loyalty programs and retention tactics to encourage repeat purchases and long-term customer relationships.
+    * Track Customer Feedback: Monitor customer reviews and feedback to make improvements and address concerns.
 
-3. Competitive Analysis:
-Research your competitors in the e-commerce space. Identify their strengths and weaknesses, as well as any gaps in their product offerings that you can exploit.
 
-4. Develop Your Unique Selling Proposition (USP):
-Define what sets PrimePulse apart from competitors. Your USP should communicate why customers should choose your e-commerce platform over others.
+3. Content Marketing:
+    * Blog Posts:
 
-5. Website Optimization:
-Ensure your website is user-friendly, mobile-responsive, and easy to navigate. Optimize product pages for SEO, improve page load times, and implement secure payment options.
+        * Fitness Tips: Share workout routines, nutrition advice, and fitness tips to help customers achieve their fitness goals.
+        * Product Reviews: Write in-depth reviews of gym equipment and accessories available on the website, highlighting features, benefits, and user experiences.
+        * How-To Guides: Create step-by-step guides on assembling and using specific gym equipment.
+        * Buying Guides: Offer guidance on choosing the right equipment based on fitness goals, available space, and budget.
+        * Health and Wellness Articles: Publish articles on topics like healthy eating, stress management, and mental well-being, emphasizing their connection to fitness.
 
-6. Content Marketing:
-Create valuable, engaging content related to your products or industry. This can include blog posts, product guides, videos, and infographics. Content marketing can help drive organic traffic to your site.
+    * Email Newsletter:
 
-7. Social Media Marketing:
-Use social media platforms (e.g., Facebook, Instagram, Pinterest) to connect with your audience, showcase products, run targeted ads, and promote special offers.
+        * Send regular newsletters featuring blog highlights, product promotions, and fitness tips.
+        * Include personalized product recommendations based on user behavior and interests.
 
-8. Email Marketing:
-Build and nurture an email list. Send personalized, relevant emails to subscribers, including product recommendations, promotions, and updates about your e-commerce platform.
+    * Social Media Content:
 
-9. Pay-Per-Click (PPC) Advertising:
-Run paid advertising campaigns on platforms like Google Ads and Facebook Ads to drive traffic and conversions. Use targeted keywords and ad copy that resonates with your audience.
+        * Share engaging visuals, videos, and short fitness tips on social media platforms.
+        * Run social media contests, challenges, and giveaways to encourage user engagement.
+        
+    * SEO-Optimized Content:
 
-10. Influencer Marketing:
-Partner with influencers in your niche to promote your products. Their recommendations can build trust and credibility with potential customers.
+        * Optimize all content for search engines to improve organic visibility.
+        * Use relevant keywords related to fitness equipment and accessories.
 
-11. Affiliate Marketing:
-Create an affiliate program that rewards partners for promoting your products. This can help you reach a wider audience and increase sales.
-
-12. Customer Reviews and Testimonials:
-Encourage satisfied customers to leave reviews and testimonials on your website. Positive reviews build trust and credibility.
-
-13. Analytics and Monitoring:
-Use tools like Google Analytics to track website performance, user behavior, and conversion rates. Continuously monitor and adjust your marketing strategies based on data insights.
-
-14. Customer Support and Engagement:
-Provide excellent customer service and engage with customers through chat, email, or social media. Happy customers are more likely to become repeat buyers and brand advocates.
-
-15. Loyalty Programs:
-Implement loyalty programs to reward repeat customers and encourage brand loyalty.
-
-16. Seasonal and Promotional Campaigns:
-Plan and execute seasonal promotions, holiday sales, and other special campaigns to boost sales during peak periods.
-
-17. Budget and ROI Analysis:
-Allocate your marketing budget wisely and regularly assess the return on investment (ROI) of each marketing channel to optimize spending.
-
-18. Continual Optimization:
-Stay agile and adapt your marketing strategy based on changing market conditions, customer feedback, and industry trends.
-
-Remember that consistency and a customer-centric approach are key to the success of your e-commerce marketing strategy. Regularly evaluate and adjust your tactics to ensure you're meeting your objectives and effectively reaching your target audience.
 
 
 [Back to Table of Contents ⇧](#table-of-contents)
@@ -303,6 +294,209 @@ Remember that consistency and a customer-centric approach are key to the success
         1. As a frequent visitor, I want to be able to reset my password if I forget my password.
         2. As a frequent visitor, I want to be able to change my Profile image.
         3. As a frequent visitor, I want to have the option to subscribe to a newsletter or email updates, allowing me to receive notifications about exclusive discounts, promotions, or upcoming product releases.
+
+* ### **Test Cases: User stories**
+* ### **First-Time Test Cases**
+1. As a user, I want to be able to browse through a wide range of fitness equipment products, so I can find the items that meet my fitness goals and preferences.
+<details>
+    <summary>Click Here for User Test Case</summary>
+    
+1. Step 1: go to https://prime-pulse-d780887a098c.herokuapp.com/.
+    user will be greeted by an inviting landing page
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694617820/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.05.59_ej0glv.png" alt="landing page" width="500"/>
+
+2. Step 2: scroll down to see more products.
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694617828/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.06.03_kv6atb.png" alt="landing page" width="500"/>
+
+</details>
+
+---
+
+
+2. As a user, I want to be able to create an account and log in, so I can access personalized features such as saving my wishlist, tracking my orders, and managing my profile information.
+
+<details>
+
+<summary>Click Here for User Test Case</summary>
+
+
+1. Step 1: Naviagte to the sign up page via the naviagtion bar. Click on Sign Up button
+
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694618255/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.16.18_lf8ik6.png" alt="nav bar" width="500"/>
+
+2. Step 2: The user is then invited to fill out the form. An email is then
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694618257/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.16.34_zq7ttk.png" alt="sign up page" width="500"/>
+
+3. Step 3: The user will be greeted by a message and asked to check their emails to verify account.
+
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694619405/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.35.12_ozah59.png" alt="activation message" width="500"/>
+
+4. Step 4: Once the email is verified the user is asked to sign in.
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694619404/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.36.00_cdywaz.png" alt="sign in page" width="500"/>
+
+5. Step 5: The user will then have access to their own personnal dashboard
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694619403/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.36.12_ewat1a.png" alt="dashboard page" width="500"/>
+
+</details>
+
+---
+
+3. As a user, I want to be able to search for specific fitness equipment products, so I can quickly find what I'm looking for without having to navigate through the entire site.
+
+<details>
+
+<summary>Click Here for User Test Case</summary>
+
+
+1. Step 1: Naviagte to the search bar located on the navbar at the top of the page
+
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694620341/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.51.39_pvtt29.png" alt="search bar" width="500"/>
+
+2. Step 2: If the user searches for 'dumbbells' only related items will be shown.
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694620344/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.51.57_fvi9ab.png" alt="result page" width="500"/>
+
+
+</details>
+
+---
+
+
+
+* ### **Returning Visitor Test Cases**
+
+1. As a returning visitor, I want to be able to view my order history, so I can track my past purchases and review the details of each order.
+<details>
+    <summary>Click Here for User Test Case</summary>
+    
+1. Step 1: from the dashboard users can access their order history by click on the 'My Orders' button
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694620836/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.00.09_pbikao.png" alt="dashboard page" width="500"/>
+
+2. Step 2: from here users can see order history.
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694620835/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.00.15_zdm0lr.png" alt="orders page" width="500"/>
+
+</details>
+
+---
+
+
+2. As a Returning Visitor, I want to easily access my previously created account, allowing me to log in quickly and access my saved information and preferences.
+
+<details>
+
+<summary>Click Here for User Test Case</summary>
+
+
+1. Step 1: Users can do this by navigating to the sign in page via thye navigation bar. Once here they will be propted to enter their creditenials to login
+
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694619404/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_16.36.00_cdywaz.png" alt="search bar" width="500"/>
+
+2. Step 2: The user is logged in
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694621240/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.07.04_fabug9.png" alt="search bar" width="500"/>
+
+
+</details>
+
+---
+
+3. As a Returning Visitor, I want to be able to make purchases via PayPal.
+
+<details>
+
+<summary>Click Here for User Test Case</summary>
+
+
+1. Step 1: Once the user has logged in and added items to their car. If they click on the cart button froim here they can review the cart.
+
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694621383/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.08.41_i6mdna.png" alt="cart review" width="500"/>
+
+2. Step 2: By clicking on the checkout button the useer is brought to the "Place Order" page. Here they are prompted to fill out the 'Billing Address' form.
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694621384/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.08.50_xilpsb.png" alt="Place order" width="500"/>
+
+3. Step 3: When the user clicks on the "place Order' button they are then transferred to the 'Payment Page'.
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694621385/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.09.06_kis9ox.png" alt="make payment " width="500"/>
+
+
+</details>
+
+---
+
+* ### **Frequent Visitor Test Cases**
+
+1. As a frequent visitor, I want to be able to reset my password if I forget my password.
+<details>
+    <summary>Click Here for User Test Case</summary>
+    
+1. Step 1: From the Dashboard Page the user can click on the 'reset password' button.
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694622277/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.22.13_qishla.png" alt=" dashboard page" width="500"/>
+
+2. Step 2: from here users can fill out the two required fields to reset password.
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694622273/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.22.23_cstyjr.png" alt=" reset password page " width="500"/>
+
+</details>
+
+---
+
+
+2. As a frequent visitor, I want to be able to change my Profile image.
+
+<details>
+
+<summary>Click Here for User Test Case</summary>
+
+
+1. Step 1: From the Dashboard Page the user can click on the 'edit profile' button.
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694622277/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.22.13_qishla.png" alt=" dashboard page" width="500"/>
+
+2. Step 2: from here, the user can click on profile picture field and 'choose file' button
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694622380/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.26.11_txj1qq.png" alt="profile picture" width="500"/>
+
+
+</details>
+
+---
+
+3. As a frequent visitor, I want to have the option to subscribe to a newsletter or email updates, allowing me to receive notifications about exclusive discounts, promotions, or upcoming product releases.
+
+<details>
+
+<summary>Click Here for User Test Case</summary>
+
+
+1. Step 1: From the Dashboard Page the user can click on the 'Sign Up To Our News Letter' button.
+
+    <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694622277/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.22.13_qishla.png" alt=" dashboard page" width="500"/>
+
+2. Step 2: from here, the user ccan provide an email to sign up for the newsletter
+
+<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694622549/readme-primepulse/User%20Stories/first%20time%20users/Screenshot_2023-09-13_at_17.28.52_tx9cbi.png" alt="newsletter form page " width="500"/>
+
+
+
+
+</details>
+
+---
+
 
 #### Development Methodology
 * The development followed an Agile methodology on the [PrimePulse github Project] (https://github.com/users/kev-n14/projects/9)
