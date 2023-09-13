@@ -4,10 +4,10 @@ from .models import Account, UserProfile
 
 class RegistrationForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput(attrs={
-        'placeholder':'Enter Password'
+        'placeholder': 'Enter Password'
     }))
     confirm_password = forms.CharField(widget=forms.PasswordInput(attrs={
-        'placeholder':'Confirm Password'
+        'placeholder': 'Confirm Password'
     }))
 
     class Meta:
@@ -23,8 +23,6 @@ class RegistrationForm(forms.ModelForm):
             raise forms.ValidationError(
                 "Password does not match!"
             )
-
-
 
     def __init__(self, *args, **kwargs):
         super(RegistrationForm, self).__init__(*args, **kwargs)
@@ -47,8 +45,10 @@ class UserForm(forms.ModelForm):
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'form-control'
 
+
 class UserProfileForm(forms.ModelForm):
     profile_picture = forms.ImageField(required=False, error_messages = {'invalid':("Image files only")}, widget=forms.FileInput)
+    
     class Meta:
         model = UserProfile
         fields = ('address_line_1', 'address_line_2', 'city', 'state', 'country', 'profile_picture')
@@ -57,6 +57,7 @@ class UserProfileForm(forms.ModelForm):
         super(UserProfileForm, self).__init__(*args, **kwargs)
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'form-control'
+
 
 class NewsletterForm(forms.ModelForm):
     class Meta:

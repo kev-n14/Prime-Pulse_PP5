@@ -40,8 +40,4 @@ urlpatterns = [
 
     path('<str:slug>/', views.page_not_found, name='404'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-   
-   
-    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-

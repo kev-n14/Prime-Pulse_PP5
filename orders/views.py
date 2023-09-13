@@ -12,24 +12,20 @@ from django.template.loader import render_to_string
 
 def payments(request):
     body = json.loads(request.body)
-    
     order = Order.objects.get(user=request.user, is_ordered=False, order_number=body['orderID'])
 
-    # Store transaction details inside Payment model
     payment = Payment(
-        user = request.user,
-        payment_id = body['transID'],
-        payment_method = body['payment_method'],
-        amount_paid = order.order_total,
-        status = body['status'],
+        user=request.user,
+        payment_id=body['transID'],
+        payment_method=body['payment_method'],
+        amount_paid=order.order_total,
+        status=body['status'],
     )
     payment.save()
 
     order.payment = payment
     order.is_ordered = True
     order.save()
-
-
     cart_items = CartItem.objects.filter(user=request.user)
 
     for item in cart_items:
@@ -46,7 +42,6 @@ def payments(request):
         cart_item = CartItem.objects.get(id=item.id)
         orderproduct = OrderProduct.objects.get(id=orderproduct.id)
         orderproduct.save()
-
 
         # Reduce the quantity of the sold products
         product = Product.objects.get(id=item.product_id)
@@ -113,7 +108,7 @@ def place_order(request, total=0, quantity=0,):
             yr = int(datetime.date.today().strftime('%Y'))
             dt = int(datetime.date.today().strftime('%d'))
             mt = int(datetime.date.today().strftime('%m'))
-            d = datetime.date(yr,mt,dt)
+            d = datetime.date(yr, mt, dt)
             current_date = d.strftime("%Y%m%d")
             order_number = current_date + str(data.id)
             data.order_number = order_number
@@ -131,6 +126,7 @@ def place_order(request, total=0, quantity=0,):
     else:
         return redirect('checkout')
 
+
 def order_complete(request):
     order_number = request.GET.get('order_number')
     transID = request.GET.get('payment_id')
@@ -145,18 +141,16 @@ def order_complete(request):
 
         payment = Payment.objects.get(payment_id=transID)
 
-
-        context ={
+        context = {
             'order': order,
             'ordered_products': ordered_products,
             'order_number': order.order_number,
-            'transID':payment.payment_id,
+            'transID': payment.payment_id,
             'payment': payment,
             'subtotal': subtotal,
         }
-
-        return render (request, 'orders/order_complete.html', context)
+        return render(request, 'orders/order_complete.html', context)
     
-    except(Payment.DoesNotExist, Order.DoesNotExist):
+    except (Payment.DoesNotExist, Order.DoesNotExist):
         return redirect('index')
 

@@ -17,8 +17,6 @@ from carts.models import CartItem, Cart
 from carts.views import _cart_id
 from django.contrib.auth import get_user_model
 import requests
-#from allauth.account.forms import LoginForm, SignupForm
-
 
 
 def register(request):
@@ -118,8 +116,6 @@ def activate(request, uidb64, token):
     return HttpResponse('ok')
 
      
-
-
 @login_required(login_url='login')
 def dashboard(request):
     orders = Order.objects.order_by('-created_at').filter(user_id=request.user.id, is_ordered=True)
@@ -149,8 +145,8 @@ def activate(request, uidb64, token):
     else:
         messages.error(request, 'Invalid activation link')
         return redirect('register')
-        
-   
+
+
 def forgotPassword(request):
     if request.method == 'POST':
         email = request.POST['email']
@@ -219,6 +215,7 @@ def my_orders(request):
     }
     return render(request, 'accounts/my_orders.html', context)
 
+
 def edit_profile(request):
     userprofile = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':
@@ -239,6 +236,7 @@ def edit_profile(request):
 
     }
     return render(request, 'accounts/edit_profile.html', context)
+
 
 @login_required(login_url='login')
 def change_password(request):
@@ -280,6 +278,7 @@ def order_detail(request, order_id):
         'subtotal': subtotal,
     }
     return render(request, 'accounts/order_detail.html', context)
+
 
 @login_required(login_url='login')
 def newsletter(request):

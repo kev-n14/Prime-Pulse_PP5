@@ -26,9 +26,9 @@ def add_cart(request, product_id):
                 item.save()
         else:
             cart_item = CartItem.objects.create(
-                product = product,
-                quantity = 1,
-                user = current_user,
+                product=product,
+                quantity=1,
+                user=current_user,
             )
 
         return redirect('cart')
@@ -42,7 +42,7 @@ def add_cart(request, product_id):
             cart = Cart.objects.get(cart_id=_cart_id(request)) # get the cart using the cart_id present in the session
         except Cart.DoesNotExist:
             cart = Cart.objects.create(
-                cart_id = _cart_id(request)
+                cart_id=_cart_id(request)
             )
         cart.save()
         
@@ -55,16 +55,15 @@ def add_cart(request, product_id):
                 item.save()
         else:
             cart_item = CartItem.objects.create(
-                product = product,
-                quantity = 1,
-                cart = cart,
+                product=product,
+                quantity=1,
+                cart=cart,
             )
             cart_item.save()
         return redirect('cart')
     
 
-
-def remove_cart(request, product_id , cart_item_id):
+def remove_cart(request, product_id, cart_item_id):
     
     product = get_object_or_404(Product, id=product_id)
     try:
@@ -94,8 +93,6 @@ def remove_cart_item(request, product_id, cart_item_id):
     return redirect('cart')
 
 
-
-
 def cart(request, total=0, quantity=0, cart_items=None):
     try:
         tax = 0
@@ -114,11 +111,11 @@ def cart(request, total=0, quantity=0, cart_items=None):
         pass 
 
     context = {
-        'total':total,
+        'total': total,
         'quantity': quantity,
-        'cart_items':cart_items,
-        'tax'       :tax,
-        'grand_total' : grand_total,
+        'cart_items': cart_items,
+        'tax': tax,
+        'grand_total': grand_total,
     }
     return render(request, 'store/cart.html', context)
 
@@ -138,14 +135,13 @@ def checkout(request, total=0, quantity=0, cart_items=None):
         tax = (2 * total)/100
         grand_total = total + tax
     except ObjectDoesNotExist:
-        pass #just ignore
+        pass
 
     context = {
         'total': total,
         'quantity': quantity,
         'cart_items': cart_items,
-        'tax'       : tax,
+        'tax': tax,
         'grand_total': grand_total,
     }
     return render(request, 'store/checkout.html', context)
-    

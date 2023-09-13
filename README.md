@@ -22,6 +22,8 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 4. [Marketing Strategy](#marketing-strategy)
 5. [User Experience (UX)](#user-experience-(ux))
     1. [User stories](#user-stories)
+    2. [Development Methodology](#development-methodology)
+    
 5. [Security Features and Defensive Design](#security-features-and-defensive-design)
     - [User Authentication](#user-authentication)
     - [Form Validation](#form-validation)
@@ -41,13 +43,15 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 
 ## Screenshots
 ---
-### **Landing Page**
 
+<details>
+<summary>Screenshots Dropdown</summary>
+
+### **Landing Page**
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/home_page_jqlbf4.png" alt="Landing Page" width="800"/>
 
 ### **Navigation Bar**
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/home_1_fkkxko.png" alt="Navigation Bar" width="1000"/>
-
 
 ### **Footer Section** 
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689573918/readme-primepulse/footer_e63eaz.png" alt="Navigation Bar" width="1000"/>
@@ -55,70 +59,55 @@ The Prime Pulse website is an e-commerce website that specializes in selling fit
 ### **Sign Up Page** 
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/sign_up_sem3eo.png" alt="Sign Up" width="800"/>
 
-
-
 ### **Login Page**
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/sign_in_kc0oxs.png" alt="Login Page" width="800"/>
 
 
 ### **Store Page**
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/store_page_sdwpmj.png" alt="Store Page" width="800"/>
 
-
 ### **Product Page**
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/product_details_page_zbvly9.png" alt="Product Page" width="800"/>
-
-
 
 ### **Cart Page**
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/cart_iyhqbz.png" alt="Cart Page" width="800"/>
-
-
 
 ### **Billing Page**
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/billing_address_page_hkswlp.png" alt="Billing Address Page" width="800"/>
 
 ### **Review Page** 
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/review_page_wjdtoj.png" alt="Review Page" width="800"/>
-
 
 ### **Paypal Transaction Page** 
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/paypal_transaction_vum32d.png" alt="LandiPaypal Transactionng Page" width="800"/>
-
-
 
 ### **Signout Page** 
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/payment_success_m8nag9.png" alt="Payment successful Page" width="800"/>
 
 ### **User Dashboard Page** 
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_main_bkealj.png" alt="User Dashboard Page" width="800"/>
 
 ### **Orders Page** 
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_my_orders_zpgpjy.png" alt="Orders Page" width="800"/>
 
 ### **Edit Profile Page** 
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_edit_profile_zeeeo1.png" alt="Edit Profile Page" width="800"/>
 
 ### **Change Password  Page** 
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/dashboard_change_password_fufnxy.png" alt="Change Password Page" width="800"/>
 
 ### **Facebook Page** 
-
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1689572938/readme-primepulse/facebook_1_b7esip.png" alt="Facebook Page" width="800"/>
 
+</details>
+
 [Back to Table of Contents ⇧](#table-of-contents)
+
 ## Design
 ### Wireframes
 You can download the wireframes for this website from this link [GoogleDrive](https://drive.google.com/drive/folders/1eaRgxIO0XQZy-wFDHgE63b_CZdl32TG1?usp=drive_link).
-
+<details>
+<summary>Wireframes Board</summary>
 
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454066/readme-primepulse/wireframes/Home_Page_rumz3j.png" alt="Home  Page" width="500"/>
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Sign_Up_jf7i3f.png" alt="Sign Up Page" width="500"/>
@@ -128,11 +117,17 @@ You can download the wireframes for this website from this link [GoogleDrive](ht
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454066/readme-primepulse/wireframes/Dashboard_Page_xguatb.png" alt="Dashboard Page" width="500"/>
 <img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694454065/readme-primepulse/wireframes/Edit_Profile_Page_hmyllb.png" alt="Edit Profile Page" width="500"/>
 
+</details> 
 
 
 ### ER Diagram
+<details>
+<summary>ER Diagram</summary>
 
-<img src="https://res.cloudinary.com/dlulkctls/image/upload/v1694597163/readme-primepulse/ER_diagram_bnvttl.png" alt="ER Dagrame" width="1000"/>
+![ER Diagram](https://res.cloudinary.com/dlulkctls/image/upload/v1694597163/readme-primepulse/ER_diagram_bnvttl.png)
+</details> 
+
+
 
 
 This code defines the structure of a relational database using the Database Markup Language (DBML). Each table in the database is defined with its attributes, data types, constraints, and relationships. Here's a brief description of each table and its purpose:
@@ -289,6 +284,7 @@ Remember that consistency and a customer-centric approach are key to the success
 
 ## User Experience (UX)
 ---
+
 * ### **User stories**
 
     * **First-Time Visitor Goals**
@@ -308,6 +304,14 @@ Remember that consistency and a customer-centric approach are key to the success
         2. As a frequent visitor, I want to be able to change my Profile image.
         3. As a frequent visitor, I want to have the option to subscribe to a newsletter or email updates, allowing me to receive notifications about exclusive discounts, promotions, or upcoming product releases.
 
+#### Development Methodology
+* The development followed an Agile methodology on the [PrimePulse github Project] (https://github.com/users/kev-n14/projects/9)
+
+<details>
+<summary>Agile board</summary>
+
+![Github project](https://res.cloudinary.com/dlulkctls/image/upload/v1694613232/readme-primepulse/User%20Stories/agile_board_kqmmql.png)
+</details> 
 
 [Back to Table of Contents ⇧](#table-of-contents)
 
@@ -448,4 +452,5 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 * [Stackoverflow](https://stackoverflow.com/)
 * [Slack](https://slack.com/intl/en-ie/)
 * [MD Bootstrap](https://mdbootstrap.com) 
+
 [Back to Table of Contents ⇧](#table-of-contents)
