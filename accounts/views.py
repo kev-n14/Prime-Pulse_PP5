@@ -18,8 +18,6 @@ from carts.views import _cart_id
 from django.contrib.auth import get_user_model
 import requests
 
-from django.core.files.uploadedfile import InMemoryUploadedFile
-from io import BytesIO
 
 def register(request):
     if request.method == 'POST':
@@ -36,18 +34,9 @@ def register(request):
             user.save()
 
             #Create User Profile
-            image_path = 'media/userprofile/default-profile-picture_tnebz5.jpg'
-
-            # Open the image file
-            with open(image_path, 'rb') as image_file:
-                # Create an InMemoryUploadedFile from the image file
-                file_data = BytesIO(image_file.read())
-                file_data.name = 'default-profile-picture_tnebz5.jpg'  # Set the file name
-
-
             profile = UserProfile()
             profile.user_id = user.id
-            profile.profile_picture = file_data
+            profile.profile_picture = 'media/userprofile/default-profile-picture_tnebz5.jpg'
             profile.save()
 
             #USER ACTIVATION
