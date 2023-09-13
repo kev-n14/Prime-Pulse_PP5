@@ -38,10 +38,7 @@ def register(request):
             #Create User Profile
             profile = UserProfile()
             profile.user_id = user.id
-            if 'profile_picture' in request.FILES:
-                profile.profile_picture = request.FILES['profile_picture']
-            else:
-                profile.profile_picture = 'images/misc/profile/default_profile_picture.jpeg'
+            profile.profile_picture = 'media/userprofile/default-profile-picture_tnebz5.jpg'
             profile.save()
 
             #USER ACTIVATION
