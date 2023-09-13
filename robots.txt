@@ -6,6 +6,5 @@ Disallow: /login/
 Disallow: /register/
 Disallow: /admin/
 Disallow: /search/
-Disallow: /wishlist/
 
-Sitemap: /workspace/Prime-Pulse_PP5/sitemap.xml
+Sitemap: https://prime-pulse-d780887a098c.herokuapp.com/sitemap.xml

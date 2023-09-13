@@ -602,20 +602,33 @@ Regularly rotate your database credentials to maintain security.
 
 The W3C Markup Validator, W3C jigsaw CSS Validator, and PEP8 Code Institute validator Services were used to validate the project to ensure there were no major errors in the project.
 * **HTML**
-1. Home Page - Document checking completed. No errors or warnings to show.[W3C validator]()
-1. Edit Page - Document checking completed. No errors or warnings to show.[W3C validator]()
-1. Login Page - Document checking completed. No errors or warnings to show.[W3C validator]()
-1. Sign Up - Document checking completed. No errors or warnings to show.[W3C validator]()
-1. Landing Page - Document checking completed. No errors or warnings to show.[W3C validator]()
-![HTML Validator ]()
+[HTML Validator](https://validator.w3.org/)
+
+1. Home Page - Document checking completed. No errors or warnings to show.
+1. Edit Page - Document checking completed. No errors or warnings to show.
+1. Login Page - Document checking completed. No errors or warnings to show.
+1. Sign Up - Document checking completed. No errors or warnings to show.
+1. Landing Page - Document checking completed. No errors or warnings to show.
+
 * **CSS**
-No errors were found when passing through the official [(Jigsaw) validator]()
-![CSS Validator ]()
+No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 * **Python**
 * [PEP8 Code Institute validator:] (https://pep8ci.herokuapp.com/#)
     * A few minor errors:
         * E501 line too long
         * W293 blank line contains whitespace
+
+* **Lighthouse**
+1. Home Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636392/readme-primepulse/User%20Stories/Test%20result/light-house-home_zvxqxa.png)
+1. Cart Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636390/readme-primepulse/User%20Stories/Test%20result/light-house-cart_ph040s.png)
+1. Login Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636384/readme-primepulse/User%20Stories/Test%20result/light-house-sign-in_cs8w5b.png)
+1. Sign Up - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636389/readme-primepulse/User%20Stories/Test%20result/light-house-sign-up_fgi0ru.png)
+1. Order Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636387/readme-primepulse/User%20Stories/Test%20result/light-house-orders_lqqfhc.png)
+1. Newsletter Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636385/readme-primepulse/User%20Stories/Test%20result/light-house-newsletter_ldswkc.png)
+1. Edit Profile Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636382/readme-primepulse/User%20Stories/Test%20result/light-house-edit-profile_tmjdzn.png)
+1. Product Page - Document checking completed. No errors or warnings to show.[Lighthouse](https://res.cloudinary.com/dlulkctls/image/upload/v1694636381/readme-primepulse/User%20Stories/Test%20result/light-house-product-page_pdt25g.png)
+
+
 
 [Back to Table of Contents ⇧](#table-of-contents)
 
